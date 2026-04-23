@@ -1,16 +1,157 @@
 [
   {
     "title": "Relic Hunters Legend",
-    "description": "Online multiplayer RPG shooter desenvolvido com Unity e Node.js.",
-    "tags": ["Unity", "C#", "Node.js", "Steam"],
+    "description": "RPG de tiro multiplayer online de larga escala. Atuei como Team Lead e Desenvolvedora Full Stack, trabalhando desde o backend em Node.js e Docker até o frontend em Unity C#.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Node.js",
+      "Docker",
+      "AWS",
+      "Steam"
+    ],
     "steam": "https://store.steampowered.com/app/633080/Relic_Hunters_Legend/",
-    "image": "assets/relic-hunters.jpg"
+    "image": "assets/relic.jpg",
+    "category": "Multiplayer Online"
+  },
+  {
+    "title": "Crisálida",
+    "description": "Responsável pela arquitetura do sistema e centralização de dados via ScriptableObjects. Desenvolvi ferramentas customizadas para o Unity Editor para otimizar o workflow de design e validação de parâmetros.",
+    "tags": [
+      "Unity",
+      "C#",
+      "System Architecture",
+      "Editor Tooling",
+      "Steam"
+    ],
+    "category": "Single Player",
+    "steam": "https://store.steampowered.com/app/3629580/Crislida/",
+    "image": "assets/crisalida.jpg"
+  },
+  {
+    "title": "Save the Bloogs",
+    "description": "Jogo de plataforma mobile onde atuei no desenvolvimento com foco em arquitetura escalável e performance. Implementei integração de hardware via SDK personalizado, automação de build (CI/CD) e testes automatizados com Unity Test Framework.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Mobile",
+      "CI/CD",
+      "SDK Integration",
+      "Unit Testing"
+    ],
+    "category": "Mobile",
+    "steam": "https://board.fun/products/bloogs",
+    "image": "assets/savethebloogs.png"
+  },
+  {
+    "title": "Slash Quest & A Reporrivel Ilha",
+    "description": "Atuação como desenvolvedora freelancer em projetos financiados por editais públicos, focando na estruturação de mecânicas modulares e componentes de gameplay consistentes utilizando Unity e C#.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Modular Architecture",
+      "Steam"
+    ],
+    "category": "Single Player",
+    "steam": null,
+    "image": "assets/slash-quest.jpg"
   },
   {
     "title": "Profane",
-    "description": "MMORPG Sandbox utilizando Unity C# DOTS.",
-    "tags": ["Unity DOTS", "C#", "MMO"],
+    "description": "MMORPG Sandbox focado em alta performance. Desenvolvi funcionalidades utilizando Unity DOTS (Data-Oriented Technology Stack) para garantir escalabilidade e otimização de memória.",
+    "tags": [
+      "Unity DOTS",
+      "C#",
+      "MMO",
+      "ECS",
+      "Otimização"
+    ],
+    "steam": "https://www.profanemmo.com/?lang=pt",
+    "image": "assets/profane.jpg",
+    "category": "Multiplayer Online"
+  },
+  {
+    "title": "Pingoal",
+    "description": "Jogo mobile 2D de plataforma com elementos de puzzle. Responsável pela liderança técnica, integração de SDKs de hardware e automação de pipeline de build (CI/CD).",
+    "tags": [
+      "Unity",
+      "C#",
+      "Mobile",
+      "CI/CD",
+      "JSON"
+    ],
+    "category": "Mobile",
+    "steam": "https://www.youtube.com/watch?v=g2oTBVoAPpc",
+    "image": "assets/pingoal.png"
+  },
+  {
+    "title": "Camera Punk Di-SK8",
+    "description": "Desenvolvimento de mecânicas complexas de fotografia e sistemas de NPCs baseados em estados (FSM). Implementei gerenciamento de câmeras (1ª e 3ª pessoa) com foco em transições fluidas e performance.",
+    "tags": [
+      "Unity",
+      "C#",
+      "OOP",
+      "NPC AI",
+      "UI/UX"
+    ],
+    "category": "Single Player",
+    "steam": "https://www.youtube.com/watch?v=yGJNx6NopdE",
+    "image": "assets/camera.png"
+  },
+  {
+    "title": "PROACOINS",
+    "description": "Manutenção e otimização de aplicação mobile. Realizei refatoração de código (Clean Code), implementei comunicação assíncrona com APIs externas via UnityWebRequest e gerenciei o processo de publicação na Google Play.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Mobile",
+      "API Integration",
+      "Refactoring",
+      "Google Play"
+    ],
+    "category": "Mobile",
+    "steam": "https://www.instagram.com/proacoins/",
+    "image": "assets/proacoins.png"
+  },
+  {
+    "title": "Tika Books",
+    "description": "Aplicativo de leitura interativa desenvolvido em Unity. Implementei um sistema de gravação de áudio sincronizado com animações de passagem de página, integrado a uma API de backend via UnityWebRequest. Realizei a refatoração completa da interface e a implementação de plugins de animação customizados.",
+    "tags": [
+      "Unity",
+      "C#",
+      "API Integration",
+      "Audio Recording",
+      "UI Refactoring"
+    ],
+    "steam": "https://www.instagram.com/tikabooksoficial/",
+    "category": "Mobile",
+    "image": "assets/tikabooks.png"
+  },
+  {
+    "title": "Sistemas Embarcados e Cassino",
+    "description": "Desenvolvimento de jogos para software embarcado em Linux. Automatizei processos de configuração de projetos com Shell Script e gerenciei arquiteturas complexas de assets.",
+    "tags": [
+      "C++",
+      "C#",
+      "Shell Script",
+      "Linux",
+      "SVN"
+    ],
+    "category": "Embarcados",
     "steam": null,
-    "image": "assets/profane.jpg"
+    "image": null
+  },
+  {
+    "title": "Sistema de Gestão Caritas",
+    "description": "Sistema de gerenciamento completo (CRUD) desenvolvido como Full Stack Developer para otimização de processos internos.",
+    "tags": [
+      ".Net Core",
+      "Angular",
+      "FullStack",
+      "RESTful API"
+    ],
+    "category": "Sistemas",
+    "steam": null,
+    "image": null
   }
 ]

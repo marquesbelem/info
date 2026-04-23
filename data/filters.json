@@ -9,9 +9,12 @@
         "name": "Multiplayer Online"
     },
     {
-        "name": "Casual"
+        "name": "Single Player"
     },
     {
-        "name": "Sistema"
+        "name": "Sistemas"
+    }, 
+    {
+        "name": "Embarcados"
     }
 ]

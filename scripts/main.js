@@ -43,7 +43,7 @@ function renderProjects(projects) {
                             ${project.tags.map(tag => `<span class="badge bg-dark border border-info text-info me-1">${tag}</span>`).join('')}
                         </div>
                         ${project.steam 
-                            ? `<a href="${project.steam}" target="_blank" class="btn btn-sm btn-outline-light w-100">Ver na Steam</a>` 
+                            ? `<a href="${project.steam}" target="_blank" class="btn btn-sm btn-outline-light w-100">Mais informações</a>` 
                             : ''
                         }
                     </div>
@@ -58,9 +58,8 @@ function renderFilterButtons() {
     
     filterContainer.innerHTML = allFilters.map((filter, index) => {
         const isActive = index === 0 ? 'active' : '';
-        const categoryValue = filter.name.toLowerCase().replace(/\s+/g, '-');
         
-        return `<button type="button" class="btn btn-outline-info filter-btn ${isActive}" data-category="${categoryValue}">${filter.name}</button>`;
+        return `<button type="button" class="btn btn-outline-info filter-btn ${isActive}" data-category="${filter.name}">${filter.name}</button>`;
     }).join('');
 }
 
@@ -79,7 +78,7 @@ function setupFilterButtons() {
             const selectedCategory = button.getAttribute('data-category');
 
             // Filtrar projetos usando Array.filter()
-            const filtered = selectedCategory === 'todos' 
+            const filtered = selectedCategory === 'Todos' 
                 ? allProjects 
                 : allProjects.filter(project => project.category === selectedCategory);
 
