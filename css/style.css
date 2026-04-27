@@ -22,6 +22,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
 body.bg-dark-custom {
     background-color: var(--dark-bg);
     color: var(--text-primary);
@@ -81,8 +87,9 @@ body::after {
 .navbar {
     border-bottom: 1px solid var(--border-light);
     backdrop-filter: blur(20px);
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -359,18 +366,18 @@ body::after {
 }
 
 .badge {
-    background: rgba(0, 242, 255, 0.15) !important;
-    border: 1px solid var(--accent) !important;
-    color: var(--accent) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #a0a0a0 !important;
     padding: 6px 14px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.75rem;
     border-radius: 50px;
     margin-right: 0.6rem;
     margin-bottom: 0.6rem;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
 }
 
 .badge:hover {
@@ -667,23 +674,59 @@ footer p {
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        line-height: 1.2;
     }
 
     .hero-content h1 span {
-        font-size: 1.8rem;
+        font-size: clamp(1.4rem, 6vw, 1.8rem);
     }
 
     .hero-section {
-        min-height: 500px;
-        padding: 60px 0;
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero-content .lead {
+        font-size: 1rem;
+    }
+
+    .hero-content .description {
+        font-size: 0.9rem;
+        padding: 0 15px;
     }
 
     #projects h2, #skills h2, #events h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     .filters-container, .event-filters {
         justify-content: flex-start !important;
+        padding-bottom: 10px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-btn, .event-filter-btn {
+        flex-shrink: 0;
+    }
+
+    .event-item {
+        padding: 1.5rem;
+    }
+
+    .event-item:hover {
+        transform: translateY(-5px); /* Alterado de translateX para não quebrar o layout */
+    }
+
+    .event-title {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
