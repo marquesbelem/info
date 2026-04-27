@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Bastidores do Desenvolvimento de Jogos",
+        "date": "Janeiro, 2025",
+        "role": "Convidada",
+        "link": "https://www.youtube.com/watch?v=ZEZd4-0iSNo",
+        "category": "Podcast",
+        "description": "Entrevista detalhando a trajetória desde o primeiro jogo mobile na BGS 2017 até a experiência com MMORPGs e Shooter RPGs, discutindo desafios técnicos e dicas para novos desenvolvedores."
+    },
+    {
+        "title": "Campus Party Brasil 2024",
+        "date": "2024",
+        "role": "Palestrante / Criadora",
+        "link": "https://youtu.be/aiHeY3MVmNk?si=vXw3iUVNjpWDH32H",
+        "category": "Evento",
+        "description": "Compartilhamento de insights sobre carreira em jogos digitais, técnicas de programação e ferramentas essenciais para o mercado."
+    },
+    {
+        "title": "Izocast (Izotonic Studios)",
+        "date": "2022",
+        "role": "Convidada",
+        "link": "https://youtu.be/z4j7NMU_Nb8?si=6iVI9cBGIaNtGzBr",
+        "category": "Podcast",
+        "description": "Bate-papo sobre início de carreira na área de games, desafios enfrentados e detalhes sobre projetos desenvolvidos."
+    },
+    {
+        "title": "Podcast Feministech",
+        "date": "2022",
+        "role": "Convidada",
+        "link": "https://creators.spotify.com/pod/profile/feministech/episodes/Como--a-carreira-em-GameDev---Episdio-18-e1eah3p",
+        "category": "Podcast",
+        "description": "Participação em episódio focado em engenharia de software e o engajamento de mulheres na área de desenvolvimento de jogos."
+    },
+    {
+        "title": "SBGAMES",
+        "date": "Outubro, 2021",
+        "role": "Mentora",
+        "link": null,
+        "category": "Mentoria",
+        "description": "Mentoria técnica em ambiente colaborativo, apoiando a resolução de desafios de programação e direcionamento estratégico de equipes."
+    },
+    {
+        "title": "Webinar: O Começo da Programação",
+        "date": "Julho, 2021",
+        "role": "Palestrante",
+        "link": "https://www.youtube.com/live/y-lWvahTpMw",
+        "category": "Palestra",
+        "description": "Exploração sobre a importância do planejamento de código e lógica antes da implementação, focando em organização de processos, Pair Programming e a transição de carreira para o desenvolvimento de jogos."
+    },
+    {
+        "title": "She Lovelace: Mulheres no Mercado de Jogos",
+        "date": "Maio, 2021",
+        "role": "Palestrante",
+        "link": "https://www.youtube.com/live/TTvAUMStMwA",
+        "category": "Palestra",
+        "description": "Painel sobre o mercado de trabalho para mulheres na indústria de games, abordando desafios de inserção, desenvolvimento técnico e o panorama atual do setor."
+    },
+    {
+        "title": "Trajetória no Desenvolvimento de Games",
+        "date": "Março, 2021",
+        "role": "Palestrante",
+        "link": "https://www.youtube.com/live/s-MKlsHtoRE?si=aBUkKS3sUg31wC6X",
+        "category": "Palestra",
+        "description": "Discussão sobre os primeiros passos na carreira de games, superação de obstáculos no setor e compartilhamento de experiência como Game Programmer na INSANE."
+    },
+    {
+        "title": "Toti",
+        "date": "Março - Julho, 2021",
+        "role": "Mentora",
+        "link": null,
+        "category": "Mentoria",
+        "description": "Capacitação técnica para mulheres em programação de jogos, focando em competências profissionais e representatividade feminina na tecnologia."
+    },
+    {
+        "title": "Palestra sobre Experiência no Mercado",
+        "date": "Março, 2020",
+        "role": "Discursista",
+        "link": null,
+        "category": "Palestra",
+        "description": "Participação em painel discutindo temas relevantes do mercado atual e compartilhando trajetória profissional vivida na tecnologia."
+    },
+    {
+        "title": "Banca de TCC - FATEC São Caetano",
+        "date": "2020",
+        "role": "Avaliadora Convidada",
+        "link": null,
+        "category": "Educação",
+        "description": "Participação como membro de banca examinadora para o curso de Jogos Digitais, avaliando projetos finais de graduação."
+    },
+    {
+        "title": "Women Game Jam",
+        "date": "Setembro, 2019",
+        "role": "Mentora",
+        "link": null,
+        "category": "Mentoria",
+        "description": "Auxílio técnico em programação de jogos e orientação de equipes no desenvolvimento de projetos sob prazos limitados (Game Jam)."
+    }
+]

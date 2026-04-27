@@ -1,43 +1,36 @@
-## Hi, my name is Camila and my nickname is Camis ✨👋 <img src="https://github.com/marquesbelem/marquesbelem/assets/22681072/0af894d6-91bd-42da-9a1a-b575bd491190" min-width="350px" max-width="350px" width="350px" align="right"/> 
+# AI Development Protocol - Portfolio Project
 
-🏠 I live in the capital of São Paulo. </br>
-❤️‍🔥 I am passionate about games! That's why I graduated in Digital Games. </br>
-🎓 I have a specialization in Software Engineering. </br>
-📚 I always seek to improve in the technologies I use and enjoy.
+Este documento serve como guia mestre para todos os agentes de IA que atuarem neste repositório. Siga estas instruções rigorosamente para cada tarefa solicitada.
 
-## About me
-With a solid 8-year career in the market, my main focus is to develop high-quality software. </br>
-I love challenges and specialize in creating projects from scratch, as improving and maintaining existing projects.
+## 🎯 Objetivo
+Desenvolver um site de portfólio moderno e interativo, utilizando agentes de IA com skills personalizadas para a execução técnica e estética.
 
-#### Others interests
-Engaging women in the field of technology, especially in the gaming industry. </br>
-I enjoy studying investments and financial education.
+## 🛠 Stack Tecnológica
+- **Linguagens:** HTML5, CSS3 e JavaScript (ES6+).
+- **Framework:** Bootstrap (utilizar a versão estável mais recente via CDN ou NPM).
+- **Diretriz:** Priorizar código limpo, semântico e performático.
 
-## Skills
-▮▮▮▮▮ Software Architecture. </br>
-▮▮▮▮▮ Problem solving. </br>
-▮▮▮▮▮ Agile Methodologies </br>
-▮▮▮▮▯ Team Management </br>
-▮▮▮▯▯ DevOps. </br>
-▮▮▮▯▯ English.
+## 📁 Arquitetura e Padrão de Código
+- **Hierarquia de Pastas:** Respeitar a estrutura de diretórios:
+  - `/assets` (imagens, ícones e fontes)
+  - `/css` (arquivos de estilo)
+  - `/js` (arquivos de script)
+- **Separação de Preocupações:** - Proibido o uso de CSS inline ou blocos `<style>` no HTML.
+  - Proibido o uso de JS inline ou blocos `<script>` no HTML.
+  - Toda a lógica deve estar em `main.js` e a estilização em `style.css`.
+- **Gestão de Arquivos:** - **Solicite permissão** antes de criar novos arquivos.
+  - **Não delete** nenhum arquivo existente sem autorização explícita.
 
-## Programming language and frameworks
-[<img height="48px" width="48px" alt="Icone CS" src="https://skillicons.dev/icons?i=cs"/>]()
-[<img height="48px" width="48px" alt="Icone C" src="https://skillicons.dev/icons?i=c"/>]()
-[<img height="48px" width="48px" alt="Icone Cpp" src="https://skillicons.dev/icons?i=cpp"/>]()
-[<img height="48px" width="48px" alt="Icone dotnet" src="https://skillicons.dev/icons?i=dotnet"/>]()
-[<img height="48px" width="48px" alt="Icone js" src="https://skillicons.dev/icons?i=js"/>]()
-[<img height="48px" width="48px" alt="Icone Node.js" src="https://skillicons.dev/icons?i=nodejs"/>]()
-[<img height="48px" width="48px" alt="Icone express" src="https://skillicons.dev/icons?i=express"/>]()
-[<img height="48px" width="48px" alt="Icone jquery" src="https://skillicons.dev/icons?i=jquery"/>]()
+## 🎨 Estética e Design (System UI)
+- **Estilo Visual:** Minimalista, tecnológico ("Tech"), com referências da cultura Gamer.
+- **Interatividade:** Focar em elementos interativos e transições suaves.
+- **Bordas:** Utilizar bordas arredondadas (`border-radius`) em todos os elementos que possuam contornos ou containers.
+- **Responsividade:** Uso obrigatório das classes do Bootstrap para garantir compatibilidade com dispositivos móveis.
+- **Cores:** - Utilizar variáveis CSS para toda a paleta de cores.
+  - **Não** utilize cores hardcoded (ex: `#FFFFFF`) diretamente nas propriedades; use sempre `var(--nome-da-cor)`.
 
-## Others
-[<img height="48px" width="48px" alt="Icone unity" src="https://skillicons.dev/icons?i=unity"/>]()
-[<img height="48px" width="48px" alt="Icone aws" src="https://skillicons.dev/icons?i=aws"/>]()
-[<img height="48px" width="48px" alt="Icone dynamodb" src="https://skillicons.dev/icons?i=dynamodb"/>]()
-[<img height="48px" width="48px" alt="Icone docker" src="https://skillicons.dev/icons?i=docker"/>]()
-[<img height="48px" width="48px" alt="Icone Npm.js" src="https://i.postimg.cc/L8k9jKJ2/Group.png"/>]()
-[<img height="48px" width="48px" alt="Icone firebase" src="https://skillicons.dev/icons?i=firebase"/>]()
-[<img height="48px" width="48px" alt="Icone jenkins" src="https://skillicons.dev/icons?i=jenkins"/>]()
-[<img height="48px" width="48px" alt="Icone bash" src="https://skillicons.dev/icons?i=bash"/>]()
+## ✍️ Regras de Conteúdo
+- **Integridade de Texto:** Não modifique, resuma ou altere o conteúdo textual (copy) fornecido nos arquivos, a menos que seja solicitado especificamente.
 
+## 🧩 Agent Skills
+- **Frontend Design:** Sempre que houver solicitações de modificação de layout, UI ou UX, utilize obrigatoriamente a skill `frontend-design` (em: .agents/skills/frontend-design/SKILL.md) para garantir a qualidade estética.
