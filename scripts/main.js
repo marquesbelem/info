@@ -177,4 +177,35 @@ window.addEventListener('load', () => {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
     }, 100);
+
+    // Smart Navbar e Correção de Scroll Mobile
+    const navbar = document.querySelector('.navbar');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        // Adiciona background sólido quando rolar um pouco para baixo
+        if (currentScrollY > 50) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+
+        // Esconde a barra ao rolar para baixo, mostra ao rolar para cima
+        // Mas só ativa a ocultação se tiver rolado bastante e estiver em mobile
+        if (window.innerWidth < 992) {
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                // Rolando para baixo
+                navbar.classList.add('navbar-hidden');
+            } else {
+                // Rolando para cima
+                navbar.classList.remove('navbar-hidden');
+            }
+        } else {
+            navbar.classList.remove('navbar-hidden'); // Garante que fica visível no desktop
+        }
+
+        lastScrollY = currentScrollY;
+    }, { passive: true });
 });

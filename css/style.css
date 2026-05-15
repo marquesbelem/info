@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
     position: relative;
 }
@@ -34,12 +34,17 @@ body.bg-dark-custom {
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
     letter-spacing: 0.2px;
-    overflow-x: hidden;
+    overflow-x: clip;
     position: relative;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -87,11 +92,25 @@ body::after {
 .navbar {
     border-bottom: 1px solid var(--border-light);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding-top: env(safe-area-inset-top);
+    transition: transform 0.3s ease, background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
+
+.navbar-scrolled {
+    background-color: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(0px); /* Remove o blur pra evitar o bug de renderização em alguns celulares */
+    -webkit-backdrop-filter: blur(0px);
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
+}
+
 
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
@@ -163,7 +182,7 @@ body::after {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding: 100px 0;
+    padding: 140px 0 100px 0;
 }
 
 .hero-section::before {
@@ -247,7 +266,8 @@ body::after {
 
 /* Projects Section */
 #projects {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
     z-index: 10;
 }
@@ -410,7 +430,8 @@ body::after {
 
 /* Skills Section */
 #skills {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
     z-index: 10;
 }
@@ -522,7 +543,8 @@ footer p {
 
 /* Events Section */
 #events {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #events h2 {
@@ -647,6 +669,7 @@ footer p {
         opacity: 0;
         transform: translateY(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -658,6 +681,7 @@ footer p {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -684,7 +708,7 @@ footer p {
 
     .hero-section {
         min-height: auto;
-        padding: 80px 0;
+        padding: 130px 0 80px 0;
     }
 
     .hero-content .lead {
@@ -696,12 +720,15 @@ footer p {
         padding: 0 15px;
     }
 
-    #projects h2, #skills h2, #events h2 {
+    #projects h2,
+    #skills h2,
+    #events h2 {
         font-size: 2rem;
         margin-bottom: 2.5rem;
     }
 
-    .filters-container, .event-filters {
+    .filters-container,
+    .event-filters {
         justify-content: flex-start !important;
         padding-bottom: 10px;
         overflow-x: auto;
@@ -709,7 +736,8 @@ footer p {
         -webkit-overflow-scrolling: touch;
     }
 
-    .filter-btn, .event-filter-btn {
+    .filter-btn,
+    .event-filter-btn {
         flex-shrink: 0;
     }
 
@@ -718,7 +746,8 @@ footer p {
     }
 
     .event-item:hover {
-        transform: translateY(-5px); /* Alterado de translateX para não quebrar o layout */
+        transform: translateY(-5px);
+        /* Alterado de translateX para não quebrar o layout */
     }
 
     .event-title {
@@ -726,7 +755,7 @@ footer p {
     }
 
     .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
