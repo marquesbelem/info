@@ -16,12 +16,12 @@
   },
   {
     "title": "Crisálida",
-    "description": "Responsável pela arquitetura do sistema e centralização de dados via ScriptableObjects. Desenvolvi ferramentas customizadas para o Unity Editor para otimizar o workflow de design e validação de parâmetros.",
+    "description": "Responsável pela arquitetura do sistema e centralização de dados via ScriptableObjects. <br><br> Desenvolvi ferramentas customizadas para o Unity Editor para otimizar o workflow de design e validação de parâmetros.",
     "tags": [
       "Unity",
       "C#",
-      "System Architecture",
-      "Editor Tooling",
+      "Arquitetura",
+      "Ferramentas",
       "Steam"
     ],
     "category": "Single Player",
@@ -30,14 +30,14 @@
   },
   {
     "title": "Save the Bloogs",
-    "description": "Jogo de plataforma mobile onde atuei no desenvolvimento com foco em arquitetura escalável e performance. Implementei integração de hardware via SDK personalizado, automação de build (CI/CD) e testes automatizados com Unity Test Framework.",
+    "description": "Jogo de plataforma mobile onde atuei no desenvolvimento com foco em arquitetura escalável e performance. <br><br> Implementei integração de hardware via SDK personalizado, automação de build (CI/CD) e testes automatizados com Unity Test Framework.",
     "tags": [
       "Unity",
       "C#",
       "Mobile",
       "CI/CD",
-      "SDK Integration",
-      "Unit Testing"
+      "Integração SDK",
+      "Testes Automatizados"
     ],
     "category": "Mobile",
     "link": "https://board.fun/products/bloogs",
@@ -49,7 +49,7 @@
     "tags": [
       "Unity",
       "C#",
-      "Modular Architecture",
+      "Arquitetura Modular",
       "Steam"
     ],
     "category": "Single Player",
@@ -86,7 +86,7 @@
   },
   {
     "title": "Camera Punk Di-SK8",
-    "description": "Desenvolvimento de mecânicas complexas de fotografia e sistemas de NPCs baseados em estados (FSM). Implementei gerenciamento de câmeras (1ª e 3ª pessoa) com foco em transições fluidas e performance.",
+    "description": "Desenvolvimento de mecânicas complexas de fotografia e sistemas de NPCs baseados em estados (FSM). <br><br> Implementei gerenciamento de câmeras (1ª e 3ª pessoa) com foco em transições fluidas e performance.",
     "tags": [
       "Unity",
       "C#",
@@ -105,8 +105,8 @@
       "Unity",
       "C#",
       "Mobile",
-      "API Integration",
-      "Refactoring",
+      "Integração de API",
+      "Refatoração",
       "Google Play"
     ],
     "category": "Mobile",
@@ -115,13 +115,13 @@
   },
   {
     "title": "Tika Books",
-    "description": "Aplicativo de leitura interativa desenvolvido em Unity. Implementei um sistema de gravação de áudio sincronizado com animações de passagem de página, integrado a uma API de backend via UnityWebRequest. Realizei a refatoração completa da interface e a implementação de plugins de animação customizados.",
+    "description": "Aplicativo de leitura interativa desenvolvido em Unity. <br><br> Implementei um sistema de gravação de áudio sincronizado com animações de passagem de página, integrado a uma API de backend via UnityWebRequest. Realizei a refatoração completa da interface e a implementação de plugins de animação customizados.",
     "tags": [
       "Unity",
       "C#",
-      "API Integration",
-      "Audio Recording",
-      "UI Refactoring"
+      "Integração de API",
+      "Gravação de Áudio",
+      "Refatoração de UI"
     ],
     "link": "https://www.instagram.com/tikabooksoficial/",
     "category": "Mobile",
@@ -129,7 +129,7 @@
   },
   {
     "title": "Sistemas Embarcados e Cassino",
-    "description": "Desenvolvimento de jogos para software embarcado em Linux. Automatizei processos de configuração de projetos com Shell Script e gerenciei arquiteturas complexas de assets.",
+    "description": "Desenvolvimento de jogos para software embarcado em Linux. <br><br> Automatizei processos de configuração de projetos com Shell Script e gerenciei arquiteturas complexas de assets.",
     "tags": [
       "C++",
       "C#",
@@ -156,7 +156,7 @@
   },
   {
     "title": "Filtro Instagram - Manual Produtora",
-    "description": "Desenvolvimento de filtro interativo para o Instagram utilizando Meta Spark Studio. Aplicação de lógica de programação em ambiente low-code e conceitos de game engines para a criação de comportamentos dinâmicos.",
+    "description": "Desenvolvimento de filtro interativo para o Instagram utilizando Meta Spark Studio. <br><br> Aplicação de lógica de programação em ambiente low-code e conceitos de game engines para a criação de comportamentos dinâmicos.",
     "tags": [
       "Spark AR",
       "Instagram",
@@ -177,7 +177,7 @@
     ],
     "link": "https://www.linkedin.com/posts/camila-marques-belem_recentemente-criei-um-pequeno-projeto-de-activity-7193810381490765825-37G6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
     "category": "Mobile",
-    "description": "Desenvolvimento sob medida de um software de roleta interativa para ativação de marca em evento promocional. Implementação completa na Unity de mecânicas de sorteio, efeitos visuais, sonorização e arquitetura de exibição para múltiplos monitores (tela de público e painel de configuração do operador).",
+    "description": "Desenvolvimento sob medida de um software de roleta interativa para ativação de marca em evento promocional. <br><br> Implementação completa na Unity de mecânicas de sorteio, efeitos visuais, sonorização e arquitetura de exibição para múltiplos monitores (tela de público e painel de configuração do operador).",
     "image": "assets/projects/roleta.png"
   }
 ]
