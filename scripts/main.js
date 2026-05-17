@@ -3,6 +3,7 @@ let allFilters = [];
 let allEvents = [];
 let allEventFilters = [];
 let allCoreSkills = [];
+let allExperience = [];
 
 async function loadProjects() {
     try {
@@ -38,6 +39,35 @@ async function loadCoreSkills() {
     } catch (error) {
         console.error('Erro ao carregar habilidades de destaque:', error);
     }
+}
+
+async function loadExperience() {
+    try {
+        const response = await fetch('./data/experience.json');
+        allExperience = await response.json();
+        renderExperience(allExperience);
+    } catch (error) {
+        console.error('Erro ao carregar linha do tempo:', error);
+    }
+}
+
+function renderExperience(experienceList) {
+    const container = document.getElementById('timeline-container');
+    if (!container) return;
+
+    container.innerHTML = experienceList.map((item, index) => {
+        const position = index % 2 === 0 ? 'left' : 'right';
+        return `
+            <div class="timeline-item ${position}">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">${item.date}</span>
+                    <h3 class="timeline-company">${item.company}</h3>
+                    <span class="timeline-role">${item.role}</span>
+                </div>
+            </div>
+        `;
+    }).join('');
 }
 
 function renderCoreSkills(skills) {
@@ -277,6 +307,7 @@ window.addEventListener('load', () => {
     loadEvents();
     loadEventFilters();
     loadCoreSkills();
+    loadExperience();
     
     // Inicializar tooltips do Bootstrap
     setTimeout(() => {
