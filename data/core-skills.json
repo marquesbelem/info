@@ -1,0 +1,34 @@
+[
+  {
+    "id": "leadership",
+    "title": "Liderança Técnica e Mentoria",
+    "subtitle": "Tech Leadership",
+    "icon": "fas fa-users-cog",
+    "shortDescription": "Guia técnico de equipes ágeis, foco em qualidade e entrega contínua.",
+    "fullDescription": "<ul><li><strong>Gestão de Equipes:</strong> Experiência liderando times (duas equipes de 5 pessoas na Rogue Snail), distribuindo tarefas e dando feedbacks (Ambra Gaming).</li><li><strong>Garantia de Qualidade:</strong> Prática ativa em mentoria de desenvolvedores juniores e condução de Code Reviews (Webcore Games e Rogue Snail) para manter a qualidade e consistência do código.</li></ul>"
+  },
+  {
+    "id": "backend",
+    "title": "Engenharia de Sistemas e Backend Escalável",
+    "subtitle": "Cloud & Arquitetura",
+    "icon": "fas fa-network-wired",
+    "shortDescription": "Arquiteturas cloud, microsserviços e sistemas de alta disponibilidade.",
+    "fullDescription": "<ul><li><strong>Desenvolvimento Full-Stack:</strong> Capacidade de transitar entre o frontend (Unity C#) e o backend (Node.js/Docker).</li><li><strong>DevOps e Infraestrutura:</strong> Domínio em pipelines de CI/CD (Bitbucket Pipelines, Jenkins) e monitoramento em nuvem (AWS Lambda, CloudFormation), além de deploy em plataformas de grande porte como a Steam.</li></ul>"
+  },
+  {
+    "id": "performance",
+    "title": "Programação Avançada e Otimização de Performance",
+    "subtitle": "Clean Code & Eficiência",
+    "icon": "fas fa-microchip",
+    "shortDescription": "Código performático, análise de gargalos e algoritmos avançados.",
+    "fullDescription": "<ul><li><strong>Paradigma de Dados (DOTS):</strong> Experiência prática com Unity C# DOTS (Data-Oriented Technology Stack) no MMORPG Profane (INSANE), o que prova sua capacidade de trabalhar com sistemas de alta performance e otimização de memória.</li><li><strong>Poliglota em Linguagens:</strong> Fluência sólida em C# e JavaScript/TypeScript, além de bagagem em C++ e Python.</li></ul>"
+  },
+  {
+    "id": "tooling",
+    "title": "Automação de Processos e Ferramental (Tooling)",
+    "subtitle": "CI/CD & Scripts",
+    "icon": "fas fa-cogs",
+    "shortDescription": "Criação de pipelines, scripts de automação e integração contínua.",
+    "fullDescription": "<ul><li><strong>Ferramentas Customizadas:</strong> Desenvolvimento de ferramentas internas para o Unity Editor.</li><li><strong>Automação de Testes e Setup:</strong> Criação de scripts em Shell para reduzir o tempo de onboarding de novos desenvolvedores, e implementação de testes automatizados usando MochaJS e Unity Test Framework.</li></ul>"
+  }
+]

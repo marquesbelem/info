@@ -486,37 +486,178 @@ body::after {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
-.skill-item {
+/* Core Skill Cards (Super Destaque) */
+.core-skill-card {
+    background: rgba(21, 21, 37, 0.6);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 242, 255, 0.1);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    height: 100%;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.skill-item:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: var(--accent);
-    transform: translateY(-5px);
+.core-skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
 }
 
-.skill-name {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 500;
-    color: var(--text-primary);
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+.core-skill-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 242, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 242, 255, 0.15), inset 0 0 20px rgba(0, 242, 255, 0.05);
 }
 
-.skill-stars {
+.core-skill-card:hover::before {
+    transform: scaleX(1);
+}
+
+.core-skill-icon {
+    font-size: 2.5rem;
     color: var(--accent);
-    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.4s ease;
+}
+
+.core-skill-card:hover .core-skill-icon {
+    transform: scale(1.1) rotate(5deg);
+    text-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+
+.core-skill-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.core-skill-subtitle {
+    font-size: 0.85rem;
+    color: var(--accent-secondary);
+    text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.core-skill-short {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.core-skill-action {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.core-skill-action i {
+    transition: transform 0.3s ease;
+}
+
+.core-skill-card:hover .core-skill-action i {
+    transform: translateX(5px);
+}
+
+/* Modal Custom Styling */
+.custom-modal-content {
+    background: rgba(21, 21, 37, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 242, 255, 0.05);
+}
+
+.custom-modal-header {
+    border-bottom: 1px solid rgba(0, 242, 255, 0.1);
+    padding: 1.5rem 2rem;
+}
+
+.custom-modal-header .modal-title {
+    color: var(--accent);
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-modal-header .modal-subtitle {
+    color: var(--accent-secondary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: block;
+    margin-top: 0.3rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.custom-modal-body {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    padding: 2rem;
+}
+
+.custom-modal-body p {
+    margin-bottom: 1.5rem;
+}
+
+.custom-modal-body ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-modal-body ul li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.custom-modal-body ul li::before {
+    content: '\f054'; /* fa-chevron-right */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--accent);
+    font-size: 0.8rem;
+}
+
+.custom-modal-body ul li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Modal Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 10px;
 }
 
 .skill-icon {

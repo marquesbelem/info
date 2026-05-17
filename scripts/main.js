@@ -2,6 +2,7 @@ let allProjects = [];
 let allFilters = [];
 let allEvents = [];
 let allEventFilters = [];
+let allCoreSkills = [];
 
 async function loadProjects() {
     try {
@@ -27,6 +28,54 @@ async function loadFilters() {
     } catch (error) {
         console.error('Erro ao carregar filtros:', error);
     }
+}
+
+async function loadCoreSkills() {
+    try {
+        const response = await fetch('./data/core-skills.json');
+        allCoreSkills = await response.json();
+        renderCoreSkills(allCoreSkills);
+    } catch (error) {
+        console.error('Erro ao carregar habilidades de destaque:', error);
+    }
+}
+
+function renderCoreSkills(skills) {
+    const container = document.getElementById('core-skills-container');
+    if (!container) return;
+
+    container.innerHTML = skills.map(skill => `
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="core-skill-card h-100" data-skill-id="${skill.id}">
+                <div class="core-skill-icon">
+                    <i class="${skill.icon}"></i>
+                </div>
+                <h3 class="core-skill-title">${skill.title}</h3>
+                <span class="core-skill-subtitle">${skill.subtitle}</span>
+                <p class="core-skill-short">${skill.shortDescription}</p>
+                <div class="core-skill-action mt-auto">
+                    <span>Saber mais <i class="fas fa-arrow-right ms-2"></i></span>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    // Adiciona evento de clique para abrir o Modal
+    document.querySelectorAll('.core-skill-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const skillId = card.getAttribute('data-skill-id');
+            const skill = allCoreSkills.find(s => s.id === skillId);
+            if (skill) {
+                document.getElementById('skillModalIcon').className = skill.icon + ' me-3 fs-3';
+                document.getElementById('skillModalTitle').textContent = skill.title;
+                document.getElementById('skillModalSubtitle').textContent = skill.subtitle;
+                document.getElementById('skillModalBody').innerHTML = skill.fullDescription;
+                
+                const modal = new bootstrap.Modal(document.getElementById('skillModal'));
+                modal.show();
+            }
+        });
+    });
 }
 
 async function loadEvents() {
@@ -227,6 +276,7 @@ window.addEventListener('load', () => {
     loadFilters();
     loadEvents();
     loadEventFilters();
+    loadCoreSkills();
     
     // Inicializar tooltips do Bootstrap
     setTimeout(() => {
