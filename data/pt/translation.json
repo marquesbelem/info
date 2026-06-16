@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "events": "Participações",
+    "experience": "Trajetória",
+    "wiki": "Camis Wiki"
+  },
+  "hero": {
+    "title": "Engenheira de Software <span>Programadora de Jogos</span>",
+    "lead": "8+ anos de experiência construindo sistemas C#, .NET e Unity",
+    "description": "Entusiasta em aprender cada vez mais sobre <strong>automação, infraestrutura cloud e arquitetura de sistemas escaláveis</strong>, transformando fluxos complexos em soluções eficientes."
+  },
+  "projects": {
+    "title": "Projetos",
+    "empty": "Nenhum projeto encontrado.",
+    "more_info": "Mais informações"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "languages": "Linguagens & Frameworks",
+    "tools": "Ferramentas & plataformas",
+    "learn_more": "Saber mais"
+  },
+  "events": {
+    "title": "Participações",
+    "empty": "Nenhuma participação encontrada.",
+    "more_details": "Ver mais detalhes"
+  },
+  "experience": {
+    "title": "Trajetória Profissional"
+  },
+  "footer": {
+    "copyright": "© 2026 Camila Marques Belem | São Paulo, Brasil"
+  },
+  "wiki": {
+    "hero_title": "Camis <span>Wiki 🧠</span>",
+    "hero_lead": "Pequenos posts sobre coisas que venho aprendendo",
+    "hero_description": "Um espaço dinâmico para compartilhar insights rápidos, anotações de estudo e lições aprendidas sobre <strong>C#, .NET, Unity, DevOps, arquitetura de software e Inteligência Artificial</strong>.",
+    "hero_alert": "Aqui usarei minhas palavras para expressar minhas opiniões e aprendizados.",
+    "filter_category": "Filtrar Categoria",
+    "search_placeholder": "Pesquisar na wiki...",
+    "empty": "Nenhum post encontrado para os termos pesquisados.",
+    "error_title": "Erro ao carregar a Camis Wiki.",
+    "error_subtitle": "Verifique se o arquivo data/wiki.json está acessível.",
+    "discuss": "Discutir no repositório"
+  },
+  "modal": {
+    "title": "Título",
+    "close": "Fechar"
+  }
+}

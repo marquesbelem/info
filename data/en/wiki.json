@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "title": "From Local SQLite to Supabase",
+    "category": "Vibe Coding",
+    "project": "Capivara Poupadora",
+    "content": "While working on another part of my 'Capivara Poupadora' project, I asked the AI to use a database. Initially, it chose a Local SQLite, which seemed sufficient at first since it had no cost and read speeds were fast. <br><br> Along with this, the AI used Prisma ORM, which in my understanding is an interface that helps handle data, making it easier to run SQL queries; this reminded me of Entity Framework in .NET. <br><br> However, in the future, I want to expand this app to other people, so using a local database makes no sense. I researched the options, and since I was already using Prisma and Next.js, the most recommended option was Supabase (PostgreSQL), which is an open-source platform that provides PostgreSQL databases. <br><br> I didn't even know it existed, but I found it very easy to configure: in the project management panel itself, it gives several configuration options to choose what best fits the project."
+  },
+  {
+    "id": "2",
+    "title": "Thank You, Past Me: The Power of Automated Tests in Games",
+    "category": "Automated Testing",
+    "project": "Save The Bloogs",
+    "content": "As a game developer, I always look for ways to optimize processes and guarantee final product quality. Recently, an experience on my current project made me deeply grateful for having implemented automated tests from the start. <br><br> The current project is relatively simple in terms of technical complexity, especially compared to online multiplayer games I've developed. However, the big challenge lies in the Game Design: the game features more than 20 stages, and each one requires a specific set of configurations involving ScriptableObjects and scene setups. <br><br> As the project grew, verifying everything manually became unfeasible. The time spent was excessive and the risk of bugs passing unnoticed until release day was huge. That's when I decided to design a solution based on automated tests."
+  },
+  {
+    "id": "3",
+    "title": "What are ScriptableObjects and how do they hold the core of the game?",
+    "category": "Automated Testing",
+    "project": "Save The Bloogs",
+    "content": "For those unfamiliar with Unity development, ScriptableObjects are data containers that allow storing large amounts of shared data without relying on specific component instances. In practice, they work like configuration files easily modified in the editor. <br><br> In our project, we use ScriptableObjects to store critical data such as difficulty parameters, objectives, and specific mechanics for each stage. These configurations are essential to maintain game balance. <br><br> But how to ensure that altering one of these files doesn't break anything? That's where tests come in. Although I already had experience with integration and backend testing in Unity (like during Relic Hunters Legend), creating tests to validate configurations and entire scenes was something completely new to me."
+  },
+  {
+    "id": "4",
+    "title": "Getting Hands-On: Implementing Tests in the Pipeline",
+    "category": "Automated Testing",
+    "project": "Save The Bloogs",
+    "content": "After documenting the test cases and aligning with the team, I implemented approximately 15 different tests focused on validating ScriptableObjects configurations, mandatory scene elements, and balance limits. <br><br> A crucial aspect of the architecture was creating tests that auto-increment: as new stages and scenes are added, the tests automatically include them, without requiring manual adjustments in the test code. <br><br> The final step was to integrate everything into our cloud development pipeline (CI/CD). The system runs all tests before generating a build. If any test fails, the build is blocked, preventing issues from reaching the testing environment or, worse, the players."
+  },
+  {
+    "id": "5",
+    "title": "When the Game Scales and Tests Save the Day",
+    "category": "Automated Testing",
+    "project": "Save The Bloogs",
+    "content": "As predicted, the game scaled significantly. What started as a small set of stages soon expanded to dozens of them, with new parameters and unique mechanics. <br><br> When these additions occurred, our automated tests immediately started identifying inconsistencies and problematic configurations, flags parameters outside the recommended range. That's when present Camila deeply thanked past Camila for anticipating this possibility. <br><br> The initial investment of time in creating tests is amply rewarded by long-term benefits. If you are interested in technical details on how I implemented these tests in Unity, leave it in the comments! I can create another article focusing on the technical side, with code examples."
+  },
+  {
+    "id": "6",
+    "title": "Recognizing Limitations: Leadership and the Human Side of Programming",
+    "category": "Leadership",
+    "project": "Relic Hunters Legend",
+    "content": "Throughout my 8 years working in programming, both web and games, I noticed that the opportunities that arose always pulled me towards project and team leadership. My profile draws attention to this side and people saw this potential in me. <br><br> I always embraced the challenge, especially because I really like to help, do pair programming, and act as a mentor. I participated in events speaking and mentoring, sharing the challenges I went through. <br><br> This side goes beyond professional; it is natural to me. I believe much of this came from the lack of mentorship at the beginning of my career, which sparked a desire to supply this need, especially targeting women in the field. This context is to understand why I decided to leave team leadership to go back to being just a programmer."
+  },
+  {
+    "id": "7",
+    "title": "The Challenge at Rogue Snail and the Choice to Step Back",
+    "category": "Leadership",
+    "project": "Relic Hunters Legend",
+    "content": "Last year, the official challenge of taking team leadership at Rogue Snail came up (I am grateful for the trust to this day). Even though I thought I wasn't ready, the team trusted my potential. I led two teams, did the job very well, and successfully helped with deliveries. <br><br> But a moment came when I realized my technical programming knowledge wasn't at the level I wanted. I was unhappy with my technical level and, as a leader, progress in coding is made difficult by other responsibilities. <br><br> This discontent was affecting my performance. Given this, I decided to ask to leave leadership and focus on code again, where I could take on larger and more complex tasks to improve."
+  },
+  {
+    "id": "8",
+    "title": "Less Pride, More Essentialism in Tech Career",
+    "category": "Leadership",
+    "project": "Relic Hunters Legend",
+    "content": "I was happy because the team, although liking my work as a leader, understood my moment and supported me. This is not a permanent 'no' to leadership, it is a 'see you soon' — but a see you soon from where I will return much more prepared and confident. <br><br> The point is: I notice that in tech there is a lot of pride. People prefer to kill themselves trying to fit into a position that doesn't match their current moment, instead of recognizing that they need to take a step back to catch up. <br><br> I end this report with two quotes from my current favorite book, 'Essentialism' by Greg McKeown: <br> 1. 'Only when we are really free to establish limits can we choose what we do.' <br> 2. 'Admit failure to begin to succeed.'"
+  },
+  {
+    "id": "9",
+    "title": "Pingoal: The Beginning of Everything and the Challenge of Being the Sole Programmer",
+    "category": "Games",
+    "project": "Pingoal",
+    "content": "Pingoal was the first game I developed and published. I created this mobile game at the end of college with some classmates, and I was the sole programmer. When they invited me, I was super happy and nervous at the same time; it was my first game, I was close to graduating — still a 'baby' in the field —, but I took on the challenge because I knew I would learn a lot. <br><br> At the time, I had left a paid internship to work at an indie studio with uncertain pay, so I split my time between that studio and the ACE team (the company my classmate founded and where I joined to make the game). We had about 2 or 3 months to develop a demo, as the goal was to take it to Brasil Game Show (BGS) 2017, the largest games event in Latin America."
+  },
+  {
+    "id": "10",
+    "title": "What I Learned Developing Pingoal",
+    "category": "Games",
+    "project": "Pingoal",
+    "content": "We managed to develop a playable demo with single player and local multiplayer. The game was a mix of air hockey and pinball, where you had skill points to distribute, paddles and goalkeepers with different abilities, and custom arenas. <br><br> On the technical side, I learned so much for someone who knew practically nothing: I discovered how to upload an app to the Play Store, implement In-App Purchases and place ads, not to mention the customization system I built. It was a huge victory! Today I look at that code and see a lot of things that could be improved. <br><br> In communication it was also a leap; I was much shyer than I am today, but at the event I had to deal with that, explaining the game to the public and tracking their reactions closely."
+  },
+  {
+    "id": "11",
+    "title": "BGS Behind the Scenes: Troubles, Investors, and Lessons",
+    "category": "Games",
+    "project": "Pingoal",
+    "content": "But it wasn't all roses. We had serious issues with investors who had agreed to several things for the BGS stand and, at the time, almost nothing was provided. We had to run after everything at the last minute, and the owner of ACE had to cover costs out of pocket. There were moments when the stand filled up so much that the test phones couldn't handle it, and we had to provide our personal devices. <br><br> But the worst part was suffering harassment. Our stand was one of the few with women in development, and while that drew good attention, it also attracted jerks. In the end, the presence of an older audience that connected with the game's nostalgia and the joy of people playing local multiplayer made the experience sensational."
+  }
+]

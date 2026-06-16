@@ -62,16 +62,33 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-transparent fixed-top">
         <div class="container">
             <a class="navbar-brand logo" href="#">CAMILA <span>M. BELEM</span></a>
+            <!-- Mobile Language Switcher -->
+            <div class="mobile-lang-switcher d-lg-none ms-auto me-3">
+                <div class="lang-pill-container">
+                    <button class="lang-pill-btn lang-option active" data-lang="pt">PT</button>
+                    <button class="lang-pill-btn lang-option" data-lang="en">EN</button>
+                </div>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#events">Participações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Trajetória</a></li>
-                    <li class="nav-item"><a class="nav-link" href="wiki.html">Camis Wiki</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events" data-i18n="nav.events">Participações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Trajetória</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wiki.html" data-i18n="nav.wiki">Camis Wiki</a></li>
+                    <li class="nav-item dropdown ms-lg-3 d-none d-lg-block">
+                        <button class="nav-link dropdown-toggle lang-btn" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none;">
+                            <i class="fas fa-globe me-1"></i> PT
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark custom-dropdown" aria-labelledby="langDropdown">
+                            <li><button class="dropdown-item lang-option active" data-lang="pt">PT</button></li>
+                            <li><button class="dropdown-item lang-option" data-lang="en">EN</button></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -82,9 +99,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 hero-content">
-                    <h1>Engenheira de Software <span>Programadora de Jogos</span></h1>
-                    <p class="lead">8+ anos de experiência construindo sistemas C#, .NET e Unity</p>
-                    <p class="description">Entusiasta em aprender cada vez mais sobre <strong>automação, infraestrutura
+                    <h1 data-i18n="hero.title">Engenheira de Software <span>Programadora de Jogos</span></h1>
+                    <p class="lead" data-i18n="hero.lead">8+ anos de experiência construindo sistemas C#, .NET e Unity</p>
+                    <p class="description" data-i18n="hero.description">Entusiasta em aprender cada vez mais sobre <strong>automação, infraestrutura
                             cloud e arquitetura
                             de sistemas escaláveis</strong>, transformando fluxos complexos em soluções eficientes.</p>
 
@@ -104,7 +121,7 @@
     <!-- Projects Section -->
     <section id="projects" class="container">
         <div class="position-relative">
-            <h2>Projetos</h2>
+            <h2 data-i18n="projects.title">Projetos</h2>
             <!-- Dropdown Filter (Mobile Only) -->
             <div class="dropdown d-md-none filter-mobile-wrapper" style="position: absolute; right: 0; top: 0; z-index: 20;">
                 <button class="filter-mobile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Filtrar">
@@ -124,7 +141,7 @@
 
     <!-- Skills Section -->
     <section id="skills" class="container py-5">
-        <h2>Habilidades</h2>
+        <h2 data-i18n="skills.title">Habilidades</h2>
 
         <!-- Core Skills Dynamic Container -->
         <div id="core-skills-container" class="row g-4 mb-5 justify-content-center">
@@ -136,7 +153,7 @@
         <!-- Technologies -->
         <div class="row mb-5">
             <div class="col-12">
-                <h4 class="text-center mb-4">Linguagens & Frameworks</h4>
+                <h4 class="text-center mb-4" data-i18n="skills.languages">Linguagens & Frameworks</h4>
                 <div class="d-flex justify-content-center flex-wrap gap-4">
                     <img class="skill-icon" alt="C#" src="https://skillicons.dev/icons?i=cs" data-bs-toggle="tooltip"
                         data-bs-title="C#" />
@@ -161,7 +178,7 @@
         <!-- Other Tools -->
         <div class="row">
             <div class="col-12">
-                <h4 class="text-center mb-4">Ferramentas & plataformas</h4>
+                <h4 class="text-center mb-4" data-i18n="skills.tools">Ferramentas & plataformas</h4>
                 <div class="d-flex justify-content-center flex-wrap gap-4">
                     <img class="skill-icon" alt="Unity" src="https://skillicons.dev/icons?i=unity"
                         data-bs-toggle="tooltip" data-bs-title="Unity" />
@@ -187,7 +204,7 @@
     <!-- Participações Section -->
     <section id="events" class="container py-5">
         <div class="position-relative">
-            <h2>Participações</h2>
+            <h2 data-i18n="events.title">Participações</h2>
             <!-- Dropdown Filter (Mobile Only) -->
             <div class="dropdown d-md-none filter-mobile-wrapper" style="position: absolute; right: 0; top: 0; z-index: 20;">
                 <button class="filter-mobile-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Filtrar">
@@ -207,7 +224,7 @@
 
     <!-- Linha do Tempo Section -->
     <section id="experience" class="container py-5">
-        <h2 class="text-center">Trajetória Profissional</h2>
+        <h2 class="text-center" data-i18n="experience.title">Trajetória Profissional</h2>
         <div class="timeline-container mt-5" id="timeline-container">
             <!-- Renderizado via JS -->
         </div>
@@ -215,7 +232,7 @@
 
     <!-- Footer -->
     <footer class="container text-center py-4 mt-5">
-        <p>© 2026 Camila Marques Belem | São Paulo, Brasil</p>
+        <p data-i18n="footer.copyright">© 2026 Camila Marques Belem | São Paulo, Brasil</p>
     </footer>
 
     <!-- Skill Details Modal -->
@@ -226,7 +243,7 @@
                     <h5 class="modal-title d-flex align-items-center" id="skillModalLabel">
                         <i id="skillModalIcon" class="me-3 fs-3"></i>
                         <div>
-                            <span id="skillModalTitle" class="d-block">Título</span>
+                            <span id="skillModalTitle" class="d-block" data-i18n="modal.title">Título</span>
                             <small id="skillModalSubtitle" class="modal-subtitle"></small>
                         </div>
                     </h5>

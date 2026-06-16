@@ -4,10 +4,12 @@ let allEvents = [];
 let allEventFilters = [];
 let allCoreSkills = [];
 let allExperience = [];
+let currentLang = 'pt';
+let translations = {};
 
 async function loadProjects() {
     try {
-        const response = await fetch('./data/projects.json');
+        const response = await fetch(`./data/${currentLang}/projects.json`);
         allProjects = await response.json();
         
         // Ordena para que os projetos COM imagem apareçam primeiro
@@ -16,13 +18,14 @@ async function loadProjects() {
         renderProjects(allProjects);
     } catch (error) {
         console.error('Erro ao carregar projetos:', error);
-        document.getElementById('project-container').innerHTML = '<p class="text-danger">Erro ao carregar a lista de projetos.</p>';
+        const errMsg = currentLang === 'pt' ? 'Erro ao carregar a lista de projetos.' : 'Error loading projects list.';
+        document.getElementById('project-container').innerHTML = `<p class="text-danger">${errMsg}</p>`;
     }
 }
 
 async function loadFilters() {
     try {
-        const response = await fetch('./data/filters.json');
+        const response = await fetch(`./data/${currentLang}/filters.json`);
         allFilters = await response.json();
         renderFilterButtons();
         setupFilterButtons();
@@ -33,7 +36,7 @@ async function loadFilters() {
 
 async function loadCoreSkills() {
     try {
-        const response = await fetch('./data/core-skills.json');
+        const response = await fetch(`./data/${currentLang}/core-skills.json`);
         allCoreSkills = await response.json();
         renderCoreSkills(allCoreSkills);
     } catch (error) {
@@ -43,7 +46,7 @@ async function loadCoreSkills() {
 
 async function loadExperience() {
     try {
-        const response = await fetch('./data/experience.json');
+        const response = await fetch(`./data/${currentLang}/experience.json`);
         allExperience = await response.json();
         renderExperience(allExperience);
     } catch (error) {
@@ -74,6 +77,8 @@ function renderCoreSkills(skills) {
     const container = document.getElementById('core-skills-container');
     if (!container) return;
 
+    const learnMoreText = translations.skills && translations.skills.learn_more ? translations.skills.learn_more : 'Saber mais';
+
     container.innerHTML = skills.map(skill => `
         <div class="col-12 col-md-6 col-lg-3">
             <div class="core-skill-card h-100" data-skill-id="${skill.id}">
@@ -84,7 +89,7 @@ function renderCoreSkills(skills) {
                 <span class="core-skill-subtitle">${skill.subtitle}</span>
                 <p class="core-skill-short">${skill.shortDescription}</p>
                 <div class="core-skill-action mt-auto">
-                    <span>Saber mais <i class="fas fa-arrow-right ms-2"></i></span>
+                    <span>${learnMoreText} <i class="fas fa-arrow-right ms-2"></i></span>
                 </div>
             </div>
         </div>
@@ -110,7 +115,7 @@ function renderCoreSkills(skills) {
 
 async function loadEvents() {
     try {
-        const response = await fetch('./data/events.json');
+        const response = await fetch(`./data/${currentLang}/events.json`);
         allEvents = await response.json();
         
         // Ordena para que as participações COM imagem apareçam primeiro
@@ -119,13 +124,14 @@ async function loadEvents() {
         renderEvents(allEvents);
     } catch (error) {
         console.error('Erro ao carregar eventos:', error);
-        document.getElementById('events-container').innerHTML = '<p class="text-danger">Erro ao carregar a lista de participações.</p>';
+        const errMsg = currentLang === 'pt' ? 'Erro ao carregar a lista de participações.' : 'Error loading events list.';
+        document.getElementById('events-container').innerHTML = `<p class="text-danger">${errMsg}</p>`;
     }
 }
 
 async function loadEventFilters() {
     try {
-        const response = await fetch('./data/filters-events.json');
+        const response = await fetch(`./data/${currentLang}/filters-events.json`);
         allEventFilters = await response.json();
         renderEventFilters();
         setupEventFilterButtons();
@@ -138,9 +144,12 @@ function renderProjects(projects) {
     const container = document.getElementById('project-container');
 
     if (projects.length === 0) {
-        container.innerHTML = '<p class="text-secondary text-center">Nenhum projeto encontrado.</p>';
+        const emptyMsg = translations.projects && translations.projects.empty ? translations.projects.empty : 'Nenhum projeto encontrado.';
+        container.innerHTML = `<p class="text-secondary text-center">${emptyMsg}</p>`;
         return;
     }
+
+    const moreInfoText = translations.projects && translations.projects.more_info ? translations.projects.more_info : 'Mais informações';
 
     container.innerHTML = projects.map(project => `
         <div class="col-12 col-md-6 col-lg-4">
@@ -159,7 +168,7 @@ function renderProjects(projects) {
                             ${project.tags.map(tag => `<span class="badge">${tag}</span>`).join('')}
                         </div>
                         ${project.link 
-                            ? `<a href="${project.link}" target="_blank" class="details-link">Mais informações <i class="fas fa-external-link-alt"></i></a>` 
+                            ? `<a href="${project.link}" target="_blank" class="details-link">${moreInfoText} <i class="fas fa-external-link-alt"></i></a>` 
                             : ''
                         }
                     </div>
@@ -208,7 +217,8 @@ function setupFilterButtons() {
             });
 
             // Filtrar projetos usando Array.filter()
-            const filtered = selectedCategory === 'Todos' 
+            const allLabel = currentLang === 'pt' ? 'Todos' : 'All';
+            const filtered = selectedCategory === allLabel 
                 ? allProjects 
                 : allProjects.filter(project => project.category === selectedCategory);
 
@@ -222,9 +232,12 @@ function renderEvents(events) {
     const container = document.getElementById('events-container');
 
     if (events.length === 0) {
-        container.innerHTML = '<p class="text-secondary text-center">Nenhuma participação encontrada.</p>';
+        const emptyMsg = translations.events && translations.events.empty ? translations.events.empty : 'Nenhuma participação encontrada.';
+        container.innerHTML = `<p class="text-secondary text-center">${emptyMsg}</p>`;
         return;
     }
+
+    const moreDetailsText = translations.events && translations.events.more_details ? translations.events.more_details : 'Ver mais detalhes';
 
     container.innerHTML = events.map(event => `
         <div class="col-12 col-md-6 col-lg-4">
@@ -246,7 +259,7 @@ function renderEvents(events) {
                     ${event.link ? `
                         <div class="mt-auto pt-3">
                             <a href="${event.link}" target="_blank" class="details-link">
-                                Ver mais detalhes <i class="fas fa-external-link-alt"></i>
+                                ${moreDetailsText} <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     ` : ''}
@@ -292,7 +305,8 @@ function setupEventFilterButtons() {
                 else btn.classList.remove('active', 'text-info');
             });
 
-            const filtered = selectedCategory === 'Todos' 
+            const allLabel = currentLang === 'pt' ? 'Todos' : 'All';
+            const filtered = selectedCategory === allLabel 
                 ? allEvents 
                 : allEvents.filter(event => event.category === selectedCategory);
 
@@ -301,7 +315,92 @@ function setupEventFilterButtons() {
     });
 }
 
-window.addEventListener('load', () => {
+async function initLanguage() {
+    const savedLang = localStorage.getItem('preferredLang');
+    if (savedLang && (savedLang === 'pt' || savedLang === 'en')) {
+        currentLang = savedLang;
+    } else {
+        const browserLang = (navigator.language || navigator.userLanguage || 'pt').toLowerCase();
+        currentLang = browserLang.startsWith('pt') ? 'pt' : 'en';
+        localStorage.setItem('preferredLang', currentLang);
+    }
+    await loadTranslations();
+    setupLanguageSelector();
+}
+
+async function loadTranslations() {
+    try {
+        const response = await fetch(`./data/${currentLang}/translation.json`);
+        translations = await response.json();
+        translatePage();
+        updateLanguageSelectorUI();
+    } catch (error) {
+        console.error('Erro ao carregar traduções:', error);
+    }
+}
+
+function getTranslationValue(key, translationsObj) {
+    return key.split('.').reduce((obj, i) => (obj ? obj[i] : null), translationsObj);
+}
+
+function translatePage() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const val = getTranslationValue(key, translations);
+        if (val) {
+            el.innerHTML = val;
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        const val = getTranslationValue(key, translations);
+        if (val) {
+            el.placeholder = val;
+        }
+    });
+}
+
+function updateLanguageSelectorUI() {
+    const langDropdownBtn = document.getElementById('langDropdown');
+    if (langDropdownBtn) {
+        langDropdownBtn.innerHTML = `<i class="fas fa-globe me-1"></i> ${currentLang.toUpperCase()}`;
+    }
+
+    document.querySelectorAll('.lang-option').forEach(btn => {
+        if (btn.getAttribute('data-lang') === currentLang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+function setupLanguageSelector() {
+    document.querySelectorAll('.lang-option').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            const selectedLang = btn.getAttribute('data-lang');
+            if (selectedLang !== currentLang) {
+                currentLang = selectedLang;
+                localStorage.setItem('preferredLang', currentLang);
+                
+                await loadTranslations();
+                
+                loadProjects();
+                loadFilters();
+                loadEvents();
+                loadEventFilters();
+                loadCoreSkills();
+                loadExperience();
+            }
+        });
+    });
+}
+
+window.addEventListener('load', async () => {
+    await initLanguage();
+    
     loadProjects();
     loadFilters();
     loadEvents();

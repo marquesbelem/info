@@ -1,0 +1,183 @@
+[
+  {
+    "title": "Relic Hunters Legend",
+    "description": "Large-scale online multiplayer shooter RPG. I acted as Tech Lead and Full Stack Developer, working from the Node.js and Docker backend to the Unity C# frontend.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Node.js",
+      "Docker",
+      "AWS",
+      "Steam"
+    ],
+    "link": "https://store.steampowered.com/app/633080/Relic_Hunters_Legend/",
+    "image": "assets/projects/relic.jpg",
+    "category": "Multiplayer Online"
+  },
+  {
+    "title": "Crisálida",
+    "description": "Responsible for system architecture and data centralization via ScriptableObjects. <br><br> Developed custom tools for the Unity Editor to optimize design workflow and parameter validation.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Architecture",
+      "Tools",
+      "Steam"
+    ],
+    "category": "Single Player",
+    "link": "https://store.steampowered.com/app/3629580/Crislida/",
+    "image": "assets/projects/crisalida.jpg"
+  },
+  {
+    "title": "Save the Bloogs",
+    "description": "Mobile platformer game where I developed with a focus on scalable architecture and performance. <br><br> Implemented hardware integration via custom SDK, build automation (CI/CD), and automated tests using the Unity Test Framework.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Mobile",
+      "CI/CD",
+      "SDK Integration",
+      "Automated Testing"
+    ],
+    "category": "Mobile",
+    "link": "https://board.fun/products/bloogs",
+    "image": "assets/projects/savethebloogs.png"
+  },
+  {
+    "title": "Slash Quest & The Dreadful Island",
+    "description": "Worked as a freelance developer on publicly funded projects, focusing on structuring modular mechanics and consistent gameplay components using Unity and C#.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Modular Architecture",
+      "Steam"
+    ],
+    "category": "Single Player",
+    "link": null,
+    "image": null
+  },
+  {
+    "title": "Profane",
+    "description": "Sandbox MMORPG focused on high performance. Developed features using Unity DOTS (Data-Oriented Technology Stack) to ensure scalability and memory optimization.",
+    "tags": [
+      "Unity DOTS",
+      "C#",
+      "MMO",
+      "ECS",
+      "Optimization"
+    ],
+    "link": "https://www.profanemmo.com/?lang=pt",
+    "image": "assets/projects/profane.jpg",
+    "category": "Multiplayer Online"
+  },
+  {
+    "title": "Pingoal",
+    "description": "2D mobile platformer game with puzzle elements. Responsible for technical leadership, integration of hardware SDKs, and build pipeline automation (CI/CD).",
+    "tags": [
+      "Unity",
+      "C#",
+      "Mobile",
+      "CI/CD",
+      "JSON"
+    ],
+    "category": "Mobile",
+    "link": "https://www.youtube.com/watch?v=g2oTBVoAPpc",
+    "image": "assets/projects/pingoal.png"
+  },
+  {
+    "title": "Camera Punk Di-SK8",
+    "description": "Development of complex photography mechanics and state-based NPC systems (FSM). <br><br> Implemented camera management (1st and 3rd person) focused on fluid transitions and performance.",
+    "tags": [
+      "Unity",
+      "C#",
+      "OOP",
+      "NPC AI",
+      "UI/UX"
+    ],
+    "category": "Single Player",
+    "link": "https://www.youtube.com/watch?v=yGJNx6NopdE",
+    "image": "assets/projects/camera.png"
+  },
+  {
+    "title": "PROACOINS",
+    "description": "Maintenance and optimization of a mobile application. Performed code refactoring (Clean Code), implemented asynchronous communication with external APIs via UnityWebRequest, and managed the publishing process on Google Play.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Mobile",
+      "API Integration",
+      "Refactoring",
+      "Google Play"
+    ],
+    "category": "Mobile",
+    "link": "https://www.instagram.com/proacoins/",
+    "image": "assets/projects/proacoins.png"
+  },
+  {
+    "title": "Tika Books",
+    "description": "Interactive reading app developed in Unity. <br><br> Implemented an audio recording system synchronized with page-turning animations, integrated with a backend API via UnityWebRequest. Conducted a complete UI refactoring and implemented custom animation plugins.",
+    "tags": [
+      "Unity",
+      "C#",
+      "API Integration",
+      "Audio Recording",
+      "UI Refactoring"
+    ],
+    "link": "https://www.instagram.com/tikabooksoficial/",
+    "category": "Mobile",
+    "image": "assets/projects/tikabooks.png"
+  },
+  {
+    "title": "Embedded Systems & Casino",
+    "description": "Development of games for embedded software in Linux. <br><br> Automated project configuration processes with Shell Script and managed complex asset architectures.",
+    "tags": [
+      "C++",
+      "C#",
+      "Shell Script",
+      "Linux",
+      "SVN"
+    ],
+    "category": "Embedded",
+    "link": null,
+    "image": null
+  },
+  {
+    "title": "Caritas Management System",
+    "description": "Complete management system (CRUD) developed as a Full Stack Developer for optimizing internal processes.",
+    "tags": [
+      ".Net Core",
+      "Angular",
+      "FullStack",
+      "RESTful API"
+    ],
+    "category": "Systems",
+    "link": null,
+    "image": null
+  },
+  {
+    "title": "Instagram Filter - Manual Produtora",
+    "description": "Development of an interactive Instagram filter using Meta Spark Studio. <br><br> Applied programming logic in a low-code environment and game engine concepts for creating dynamic behaviors.",
+    "tags": [
+      "Spark AR",
+      "Instagram",
+      "Low-Code",
+      "Game Engines",
+      "Mobile"
+    ],
+    "category": "Mobile",
+    "link": "https://www.linkedin.com/posts/camila-marques-belem_ol%C3%A1-pessoal-uns-meses-atr%C3%A1s-o-bruno-nunes-activity-7241431276048568320-b_eI?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
+    "image": "./assets/projects/manual-produtora.png"
+  },
+  {
+    "title": "Interactive Roulette - Sakura Tourism",
+    "tags": [
+      "Unity",
+      "C#",
+      "Activation"
+    ],
+    "link": "https://www.linkedin.com/posts/camila-marques-belem_recentemente-criei-um-pequeno-projeto-de-activity-7193810381490765825-37G6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
+    "category": "Mobile",
+    "description": "Custom development of interactive roulette software for brand activation in promotional events. <br><br> Complete implementation in Unity of raffle mechanics, visual effects, sound design, and display architecture for multiple monitors (audience screen and operator configuration panel).",
+    "image": "assets/projects/roleta.png"
+  }
+]

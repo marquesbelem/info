@@ -1,0 +1,20 @@
+[
+    {
+        "name": "All"
+    },
+    {
+        "name": "Mobile"
+    },
+    {
+        "name": "Multiplayer Online"
+    },
+    {
+        "name": "Single Player"
+    },
+    {
+        "name": "Systems"
+    }, 
+    {
+        "name": "Embedded"
+    }
+]

@@ -1,0 +1,108 @@
+[
+    {
+        "title": "Behind the Scenes of Game Development",
+        "date": "January, 2025",
+        "role": "Guest",
+        "link": "https://www.youtube.com/watch?v=ZEZd4-0iSNo",
+        "category": "Podcast",
+        "description": "Interview detailing the trajectory from the first mobile game at BGS 2017 to experience with MMORPGs and Shooter RPGs, discussing technical challenges and tips for new developers.",
+        "image": "./assets/events/manodevin.jpg"
+    },
+    {
+        "title": "Campus Party Brasil 2024",
+        "date": "2024",
+        "role": "Speaker / Creator",
+        "link": "https://youtu.be/aiHeY3MVmNk?si=vXw3iUVNjpWDH32H",
+        "category": "Event",
+        "image": "./assets/events/CPBR16.jpg",
+        "description": "Sharing insights about careers in digital games, programming techniques, and essential tools for the market."
+    },
+    {
+        "title": "Izocast (Izotonic Studios)",
+        "date": "2022",
+        "role": "Guest",
+        "link": "https://youtu.be/z4j7NMU_Nb8?si=6iVI9cBGIaNtGzBr",
+        "category": "Podcast",
+        "image": "./assets/events/izocast.png",
+        "description": "Chat about starting a career in games, challenges faced, and details about developed projects."
+    },
+    {
+        "title": "Felementech Podcast",
+        "date": "2022",
+        "role": "Guest",
+        "link": "https://creators.spotify.com/pod/profile/feministech/episodes/Como--a-carreira-em-GameDev---Episdio-18-e1eah3p",
+        "category": "Podcast",
+        "image": "./assets/events/feministech.jpg",
+        "description": "Participation in an episode focused on software engineering and women's engagement in the game development field."
+    },
+    {
+        "title": "SBGAMES",
+        "date": "October, 2021",
+        "role": "Mentor",
+        "link": null,
+        "category": "Mentorship",
+        "description": "Technical mentorship in a collaborative environment, supporting programming challenges resolution and strategic guidance of teams."
+    },
+    {
+        "title": "Webinar: The Beginning of Programming",
+        "date": "July, 2021",
+        "role": "Speaker",
+        "link": "https://www.youtube.com/live/y-lWvahTpMw",
+        "category": "Talk",
+        "image": "./assets/events/webinar.png",
+        "description": "Exploring the importance of planning code and logic before implementation, focusing on process organization, Pair Programming, and career transition to game development."
+    },
+    {
+        "title": "She Lovelace: Women in the Games Market",
+        "date": "May, 2021",
+        "role": "Speaker",
+        "link": "https://www.youtube.com/live/TTvAUMStMwA",
+        "category": "Talk",
+        "image": "./assets/events/shelovelace.jpg",
+        "description": "Panel about the job market for women in the games industry, addressing entry challenges, technical development, and the current state of the sector."
+    },
+    {
+        "title": "Trajectory in Game Development",
+        "date": "March, 2021",
+        "role": "Speaker",
+        "link": "https://www.youtube.com/live/s-MKlsHtoRE?si=aBUkKS3sUg31wC6X",
+        "category": "Talk",
+        "image": "./assets/events/impactagamehour.png",
+        "description": "Discussion on the first steps in a games career, overcoming obstacles in the sector, and sharing experience as a Game Programmer at INSANE."
+    },
+    {
+        "title": "Toti",
+        "date": "March - July, 2021",
+        "role": "Mentor",
+        "link": "https://www.linkedin.com/posts/camila-marques-belem_est%C3%A1-sendo-uma-experi%C3%AAncia-incr%C3%ADvel-conhecendo-share-6787832090848194560-11Dj?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
+        "category": "Mentorship",
+        "image": "./assets/events/toti.jpg",
+        "description": "Technical training for women in game programming, focusing on professional skills and female representation in technology."
+    },
+    {
+        "title": "Talk on Market Experience",
+        "date": "March, 2020",
+        "role": "Speaker",
+        "link": null,
+        "category": "Talk",
+        "description": "Participation in a panel discussing relevant topics in the current market and sharing the professional journey lived in technology."
+    },
+    {
+        "title": "Graduation Project Jury - FATEC São Caetano",
+        "date": "2020",
+        "role": "Guest Evaluator",
+        "link": "https://www.linkedin.com/posts/camila-marques-belem_hoje-tive-a-oportunidade-de-participar-de-share-6550760477536862208-PkmS?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
+        "category": "Education",
+        "image": "./assets/events/bancatcc.jpg",
+        "description": "Participation as a member of the examining committee for the Digital Games course, evaluating final graduation projects."
+    },
+    {
+        "title": "Women Game Jam",
+        "date": "September, 2019",
+        "role": "Mentor",
+        "link": "https://www.linkedin.com/posts/camila-marques-belem_wgjbr-wgj2019-wgjsp-share-6580918234273337344-gdka?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
+        "image": "./assets/events/womengamejam.jpg",
+        "category": "Mentorship",
+        "description": "Technical assistance in game programming and team guidance in developing projects under tight deadlines (Game Jam)."
+    }
+]

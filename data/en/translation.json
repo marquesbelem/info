@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "skills": "Skills",
+    "events": "Events",
+    "experience": "Journey",
+    "wiki": "Camis Wiki"
+  },
+  "hero": {
+    "title": "Software Engineer <span>Game Programmer</span>",
+    "lead": "8+ years of experience building C#, .NET, and Unity systems",
+    "description": "Enthusiastic about learning more and more about <strong>automation, cloud infrastructure, and scalable systems architecture</strong>, turning complex workflows into efficient solutions."
+  },
+  "projects": {
+    "title": "Projects",
+    "empty": "No projects found.",
+    "more_info": "More information"
+  },
+  "skills": {
+    "title": "Skills",
+    "languages": "Languages & Frameworks",
+    "tools": "Tools & Platforms",
+    "learn_more": "Learn more"
+  },
+  "events": {
+    "title": "Events",
+    "empty": "No events found.",
+    "more_details": "View more details"
+  },
+  "experience": {
+    "title": "Professional Journey"
+  },
+  "footer": {
+    "copyright": "© 2026 Camila Marques Belem | São Paulo, Brazil"
+  },
+  "wiki": {
+    "hero_title": "Camis <span>Wiki 🧠</span>",
+    "hero_lead": "Short posts about things I have been learning",
+    "hero_description": "A dynamic space for sharing quick insights, study notes, and lessons learned about <strong>C#, .NET, Unity, DevOps, software architecture, and Artificial Intelligence</strong>.",
+    "hero_alert": "Here I will use my words to express my opinions and learnings.",
+    "filter_category": "Filter Category",
+    "search_placeholder": "Search the wiki...",
+    "empty": "No posts found matching the search terms.",
+    "error_title": "Error loading Camis Wiki.",
+    "error_subtitle": "Check if the data/wiki.json file is accessible.",
+    "discuss": "Discuss on repository"
+  },
+  "modal": {
+    "title": "Title",
+    "close": "Close"
+  }
+}

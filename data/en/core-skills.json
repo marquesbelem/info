@@ -1,0 +1,34 @@
+[
+  {
+    "id": "leadership",
+    "title": "Technical Leadership & Mentorship",
+    "subtitle": "Tech Leadership",
+    "icon": "fas fa-users-cog",
+    "shortDescription": "Technical guide for agile teams, focusing on quality and continuous delivery.",
+    "fullDescription": "<ul><li><strong>Team Management:</strong> Experience leading teams (two 5-people teams at Rogue Snail), distributing tasks, and providing feedback (Ambra Gaming).</li><li><strong>Quality Assurance:</strong> Active practice mentoring junior developers and conducting Code Reviews (Webcore Games and Rogue Snail) to maintain code quality and consistency.</li></ul>"
+  },
+  {
+    "id": "backend",
+    "title": "Systems Engineering & Scalable Backend",
+    "subtitle": "Cloud & Architecture",
+    "icon": "fas fa-network-wired",
+    "shortDescription": "Cloud architectures, microservices, and high-availability systems.",
+    "fullDescription": "<ul><li><strong>Full-Stack Development:</strong> Ability to transition between frontend (Unity C#) and backend (Node.js/Docker).</li><li><strong>DevOps & Infrastructure:</strong> Proficiency in CI/CD pipelines (Bitbucket Pipelines, Jenkins) and cloud monitoring (AWS Lambda, CloudFormation), in addition to deployment on large-scale platforms like Steam.</li></ul>"
+  },
+  {
+    "id": "performance",
+    "title": "Advanced Programming & Performance Optimization",
+    "subtitle": "Clean Code & Efficiency",
+    "icon": "fas fa-microchip",
+    "shortDescription": "Performant code, bottleneck analysis, and advanced algorithms.",
+    "fullDescription": "<ul><li><strong>Data-Oriented Design (DOTS):</strong> Practical experience with Unity C# DOTS (Data-Oriented Technology Stack) on the MMORPG Profane (INSANE), proving capability with high-performance systems and memory optimization.</li><li><strong>Polyglot:</strong> Solid fluency in C# and JavaScript/TypeScript, with additional background in C++ and Python.</li></ul>"
+  },
+  {
+    "id": "tooling",
+    "title": "Process Automation & Tooling",
+    "subtitle": "CI/CD & Scripts",
+    "icon": "fas fa-cogs",
+    "shortDescription": "Pipeline creation, automation scripts, and continuous integration.",
+    "fullDescription": "<ul><li><strong>Custom Tools:</strong> Development of internal tools for the Unity Editor.</li><li><strong>Test Automation & Setup:</strong> Creation of Shell scripts to reduce onboarding time for new developers, and implementation of automated tests using MochaJS and Unity Test Framework.</li></ul>"
+  }
+]

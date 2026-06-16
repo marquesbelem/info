@@ -44,16 +44,33 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-transparent fixed-top">
         <div class="container">
             <a class="navbar-brand logo" href="index.html">CAMILA <span>M. BELEM</span></a>
+            <!-- Mobile Language Switcher -->
+            <div class="mobile-lang-switcher d-lg-none ms-auto me-3">
+                <div class="lang-pill-container">
+                    <button class="lang-pill-btn lang-option active" data-lang="pt">PT</button>
+                    <button class="lang-pill-btn lang-option" data-lang="en">EN</button>
+                </div>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#events">Participações</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#experience">Trajetória</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Camis Wiki</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects" data-i18n="nav.projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills" data-i18n="nav.skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#events" data-i18n="nav.events">Participações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience" data-i18n="nav.experience">Trajetória</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" data-i18n="nav.wiki">Camis Wiki</a></li>
+                    <li class="nav-item dropdown ms-lg-3 d-none d-lg-block">
+                        <button class="nav-link dropdown-toggle lang-btn" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background: none; border: none;">
+                            <i class="fas fa-globe me-1"></i> PT
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark custom-dropdown" aria-labelledby="langDropdown">
+                            <li><button class="dropdown-item lang-option active" data-lang="pt">PT</button></li>
+                            <li><button class="dropdown-item lang-option" data-lang="en">EN</button></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -64,12 +81,12 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 hero-content">
-                    <h1>Camis <span>Wiki 🧠</span></h1>
-                    <p class="lead">Pequenos posts sobre coisas que venho aprendendo</p>
-                    <p class="description">Um espaço dinâmico para compartilhar insights rápidos, anotações de estudo e
+                    <h1 data-i18n="wiki.hero_title">Camis <span>Wiki 🧠</span></h1>
+                    <p class="lead" data-i18n="wiki.hero_lead">Pequenos posts sobre coisas que venho aprendendo</p>
+                    <p class="description" data-i18n="wiki.hero_description">Um espaço dinâmico para compartilhar insights rápidos, anotações de estudo e
                         lições aprendidas sobre <strong>C#, .NET, Unity, DevOps, arquitetura de software e Inteligência
                             Artificial</strong>.</p>
-                    <div class="wiki-hero-alert mt-3">
+                    <div class="wiki-hero-alert mt-3" data-i18n="wiki.hero_alert">
                         <i class="text-info"></i> Aqui usarei minhas palavras para expressar minhas
                         opiniões e aprendizados.
                     </div>
@@ -96,7 +113,7 @@
                 <div class="dropdown d-md-none filter-mobile-wrapper position-relative">
                     <button class="filter-mobile-btn w-100 d-flex justify-content-between align-items-center"
                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span><i class="fas fa-filter me-2"></i>Filtrar Categoria</span>
+                        <span><i class="fas fa-filter me-2"></i><span data-i18n="wiki.filter_category">Filtrar Categoria</span></span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark custom-dropdown w-100" id="mobile-wiki-filters">
@@ -110,7 +127,7 @@
                 <div class="wiki-search-wrapper">
                     <i class="fas fa-search wiki-search-icon"></i>
                     <input type="text" id="wiki-search-input" class="wiki-search-input"
-                        placeholder="Pesquisar na wiki...">
+                        data-i18n-placeholder="wiki.search_placeholder" placeholder="Pesquisar na wiki...">
                 </div>
             </div>
 
@@ -125,7 +142,7 @@
 
     <!-- Footer -->
     <footer class="container text-center py-4 mt-5 border-top border-secondary-subtle">
-        <p>© 2026 Camila Marques Belem | São Paulo, Brasil</p>
+        <p data-i18n="footer.copyright">© 2026 Camila Marques Belem | São Paulo, Brasil</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
