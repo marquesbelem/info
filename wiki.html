@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camis Wiki | Camila Marques Belem</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Camis Wiki: Pequenos posts, insights e anotações sobre C#, .NET, Unity, DevOps e Cloud AWS por Camila Marques Belem.">
+    <meta name="keywords"
+        content="Engenharia de Software, Unity, C#, .NET, Cloud Computing, DevOps, Camis Wiki, Wiki de Programação, Insights de Desenvolvimento">
+    <meta name="author" content="Camila Marques Belem">
+    <meta property="og:image" content="./assets/banner.jpg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Camis Wiki | Camila Marques Belem">
+    <meta property="og:description"
+        content="Pequenos posts, insights e anotações sobre desenvolvimento de software, jogos e infraestrutura cloud.">
+    <meta property="og:image" content="./assets/banner.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Camis Wiki | Camila Marques Belem">
+    <meta property="twitter:description"
+        content="Anotações de desenvolvimento, infraestrutura e jogos. Venha participar da discussão.">
+    <meta property="twitter:image" content="./assets/banner.jpg">
+
+    <link rel="canonical" href="https://marquesbelem.github.io/info/wiki.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta name="theme-color" content="#00f2ff">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-dark-custom text-light">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">CAMILA <span>M. BELEM</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#events">Participações</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#experience">Trajetória</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Camis Wiki</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wiki Hero Section -->
+    <section class="hero-section text-center wiki-hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 hero-content">
+                    <h1>Camis <span>Wiki 🧠</span></h1>
+                    <p class="lead">Pequenos posts sobre coisas que venho aprendendo</p>
+                    <p class="description">Um espaço dinâmico para compartilhar insights rápidos, anotações de estudo e lições aprendidas sobre <strong>C#, .NET, Unity, DevOps, arquitetura de software e Inteligência Artificial</strong>. Aqui usarei minhas palavras para expressar minhas opiniões e aprendizados.</p>
+                    <div class="wiki-hero-alert mt-3">
+                        <i class="fab fa-github me-2 text-info"></i> Use o link do repositório em cada card para adicionar comentários e discutir!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wiki Main Content Section -->
+    <section id="wiki" class="container py-5">
+
+        <!-- Controls: Filters + Search -->
+        <div class="row mb-5 justify-content-between align-items-center g-4">
+
+            <!-- Filters -->
+            <div class="col-12 col-md-7 col-lg-8 order-2 order-md-1">
+                <!-- Desktop Buttons -->
+                <div id="wiki-filters-container"
+                    class="filters-container d-none d-md-flex justify-content-start flex-wrap gap-3">
+                    <!-- Renderizado dinamicamente via JS -->
+                </div>
+
+                <!-- Mobile Dropdown -->
+                <div class="dropdown d-md-none filter-mobile-wrapper position-relative">
+                    <button class="filter-mobile-btn w-100 d-flex justify-content-between align-items-center"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span><i class="fas fa-filter me-2"></i>Filtrar Categoria</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark custom-dropdown w-100" id="mobile-wiki-filters">
+                        <!-- Renderizado dinamicamente via JS -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="col-12 col-md-5 col-lg-4 order-1 order-md-2">
+                <div class="wiki-search-wrapper">
+                    <i class="fas fa-search wiki-search-icon"></i>
+                    <input type="text" id="wiki-search-input" class="wiki-search-input"
+                        placeholder="Pesquisar na wiki...">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Wiki Posts Grid -->
+        <div id="wiki-posts-container" class="row g-4">
+            <!-- Renderizado via JS -->
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="container text-center py-4 mt-5 border-top border-secondary-subtle">
+        <p>© 2026 Camila Marques Belem | São Paulo, Brasil</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/wiki.js"></script>
+</body>
+
+</html>
