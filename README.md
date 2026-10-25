@@ -6,18 +6,20 @@ Este documento serve como guia mestre para todos os agentes de IA que atuarem ne
 Desenvolver um site de portfólio moderno e interativo, utilizando agentes de IA com skills personalizadas para a execução técnica e estética.
 
 ## 🛠 Stack Tecnológica
-- **Linguagens:** HTML5, CSS3 e JavaScript (ES6+).
-- **Framework:** Bootstrap (utilizar a versão estável mais recente via CDN ou NPM).
+- **Framework:** Next.js (App Router, SSG) com TypeScript em modo `strict`.
+- **Estilização:** Tailwind CSS (modo claro/escuro) e ícones `lucide-react`.
+- **SEO:** Metadata API, `sitemap.ts`, `robots.ts`, JSON-LD e canonical em todas as páginas.
 - **Diretriz:** Priorizar código limpo, semântico e performático.
 
 ## 📁 Arquitetura e Padrão de Código
-- **Hierarquia de Pastas:** Respeitar a estrutura de diretórios:
-  - `/assets` (imagens, ícones e fontes)
-  - `/css` (arquivos de estilo)
-  - `/js` (arquivos de script)
-- **Separação de Preocupações:** - Proibido o uso de CSS inline ou blocos `<style>` no HTML.
-  - Proibido o uso de JS inline ou blocos `<script>` no HTML.
-  - Toda a lógica deve estar em `main.js` e a estilização em `style.css`.
+- **Hierarquia de Pastas:**
+  - `/src/app` (rotas: `(pt)` em `/` e `(en)/en`, `sitemap.ts`, `robots.ts`, `globals.css`)
+  - `/src/components` (componentes de UI)
+  - `/src/lib` (dados, metadados e constantes do site)
+  - `/src/data` (conteúdo em JSON, `pt` e `en`)
+  - `/public/assets` (imagens)
+- **Comandos:** `npm run dev`, `npm run build`, `npm run lint`.
+- **Variável opcional:** `NEXT_PUBLIC_SITE_URL` define a URL canônica.
 - **Gestão de Arquivos:** - **Solicite permissão** antes de criar novos arquivos.
   - **Não delete** nenhum arquivo existente sem autorização explícita.
 

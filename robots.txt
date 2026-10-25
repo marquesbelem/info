@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://marquesbelem.github.io/info/sitemap.xml

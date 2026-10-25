@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#793eed" />
+      <stop offset="50%" stop-color="#652ce0" />
+      <stop offset="100%" stop-color="#4714b8" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffbe3b" />
+      <stop offset="100%" stop-color="#ffa600" />
+    </linearGradient>
+    <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Fundo Sólido Moderno com Cantos Arredondados estilo App Icon -->
+  <rect width="512" height="512" rx="128" fill="url(#primary-grad)" />
+
+  <!-- Borda sutil interna -->
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="6" />
+
+  <!-- Detalhe decorativo gamer/tech (canto superior direito) -->
+  <circle cx="410" cy="102" r="24" fill="url(#accent-grad)" filter="url(#subtle-shadow)" />
+
+  <!-- Monograma Estilizado CMB (Geométrico & Bold) -->
+  <g filter="url(#subtle-shadow)">
+    <!-- 'C' -->
+    <path d="M 180 186 C 160 186 130 196 112 218 C 92 242 82 274 82 310 C 82 346 92 378 112 402 C 130 424 160 434 180 434 C 205 434 226 422 238 408 L 210 380 C 202 390 192 396 180 396 C 168 396 150 390 138 374 C 126 358 120 336 120 310 C 120 284 126 262 138 246 C 150 230 168 224 180 224 C 192 224 202 230 210 240 L 238 212 C 226 198 205 186 180 186 Z" fill="#ffffff" />
+    
+    <!-- 'M' central destacado em Accent Glow -->
+    <path d="M 238 190 L 272 190 L 310 300 L 348 190 L 382 190 L 382 430 L 346 430 L 346 270 L 318 355 L 302 355 L 274 270 L 274 430 L 238 430 Z" fill="url(#accent-grad)" />
+
+    <!-- 'B' tech estilizado -->
+    <path d="M 374 190 L 424 190 C 448 190 464 202 464 226 C 464 242 454 254 440 262 C 458 270 470 286 470 306 C 470 334 448 350 422 350 L 374 350 Z M 406 222 L 406 254 L 422 254 C 430 254 436 248 436 238 C 436 228 430 222 422 222 Z M 406 286 L 406 318 L 424 318 C 434 318 440 312 440 302 C 440 292 434 286 424 286 Z" fill="#ffffff" />
+  </g>
+</svg>
