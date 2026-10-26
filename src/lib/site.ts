@@ -1,8 +1,19 @@
 export type Lang = "pt" | "en";
 
-export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://marquesbelem.github.io/info"
-).replace(/\/$/, "");
+const getSiteUrl = () => {
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return process.env.NEXT_PUBLIC_SITE_URL;
+  }
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  }
+  if (process.env.VERCEL_URL) {
+    return `https://${process.env.VERCEL_URL}`;
+  }
+  return "https://cmbelem.vercel.app";
+};
+
+export const SITE_URL = getSiteUrl().replace(/\/$/, "");
 
 export const AUTHOR = {
   name: "Camila Marques Belem",

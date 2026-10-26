@@ -3,6 +3,7 @@ import { Bungee, Raleway } from "next/font/google";
 import type { Viewport } from "next";
 import type { ReactNode } from "react";
 import { ui, type Lang } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/react";
 
 const bungee = Bungee({
   weight: "400",
@@ -44,6 +45,7 @@ export function RootShell({ lang, children }: { lang: Lang; children: ReactNode 
           {ui[lang].skip}
         </a>
         {children}
+        <Analytics />
       </body>
     </html>
   );

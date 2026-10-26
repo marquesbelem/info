@@ -42,9 +42,10 @@ export function buildMetadata(lang: Lang, page: "home" | "wiki"): Metadata {
       images: [
         {
           url: image,
+          secureUrl: image,
           width: 1200,
           height: 630,
-          alt: `${title} - Banner`,
+          alt: `${title} - Preview`,
           type: "image/jpeg",
         },
       ],
@@ -57,7 +58,7 @@ export function buildMetadata(lang: Lang, page: "home" | "wiki"): Metadata {
       images: [
         {
           url: image,
-          alt: `${title} - Banner`,
+          alt: `${title} - Preview`,
         },
       ],
     },
