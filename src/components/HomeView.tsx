@@ -83,37 +83,31 @@ export function HomeView({ lang }: { lang: Lang }) {
       <Header lang={lang} t={t} current="home" />
       <main id="conteudo">
         <section className="glow-bg dots relative overflow-hidden">
-          <div className="mx-auto max-w-4xl px-4 pb-14 pt-14 text-center md:pt-20">
-            <div className="rise relative mx-auto size-44 sm:size-52">
-              <div
-                className="ring-spin absolute -inset-2 rounded-full"
-                aria-hidden
-              />
-              <Image
-                src="/assets/camila_profile.jpg"
-                alt={AUTHOR.name}
-                width={416}
-                height={416}
-                priority
-                sizes="208px"
-                className="relative size-full rounded-full border-4 border-bg object-cover"
-              />
-              <span className="floaty absolute -right-6 bottom-2 rounded-2xl bg-brand-yellow px-3 py-2 font-display text-xs text-[#17102e] shadow-lg">
-                {copy.badge}
-              </span>
-            </div>
-
+          <div className="absolute inset-0 -z-0" aria-hidden>
+            <Image
+              src="/assets/camila_profile.jpg"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover object-[center_40%]"
+            />
+            <div className="absolute inset-0 bg-bg/10 dark:bg-bg/85" />
+            <div className="absolute inset-0 bg-gradient-to-b from-bg/95 via-bg/70 via-45% to-transparent to-65% dark:hidden" />
+            <div className="absolute inset-0 bg-gradient-to-b from-bg/30 via-transparent via-70% to-bg" />
+          </div>
+          <div className="relative mx-auto max-w-4xl px-4 pb-10 pt-12 text-center md:pt-16">
             <h1
-              className="rise font-display mx-auto mt-10 max-w-3xl text-4xl leading-tight sm:text-5xl [&_span]:mt-2 [&_span]:block [&_span]:text-accent"
+              className="rise font-display mx-auto max-w-3xl text-4xl leading-tight sm:text-5xl [&_span]:mt-2 [&_span]:block [&_span]:text-accent"
               dangerouslySetInnerHTML={{ __html: t.hero.title }}
             />
-            <p className="mt-5 text-xl font-bold">{t.hero.lead}</p>
+            <p className="mt-4 text-xl font-bold">{t.hero.lead}</p>
             <p
-              className="mx-auto mt-4 max-w-2xl text-lg text-muted [&_strong]:text-fg"
+              className="mx-auto mt-3 max-w-2xl text-lg text-muted [&_strong]:text-fg"
               dangerouslySetInnerHTML={{ __html: t.hero.description }}
             />
 
-            <ul className="mt-8 flex flex-wrap justify-center gap-2" aria-label={copy.stack}>
+            <ul className="mt-5 flex flex-wrap justify-center gap-2" aria-label={copy.stack}>
               {stack.map((s) => (
                 <li
                   key={s}
@@ -124,55 +118,53 @@ export function HomeView({ lang }: { lang: Lang }) {
               ))}
             </ul>
 
-            <ul className="mt-8 flex flex-wrap justify-center gap-3">
-              {social.map(({ href, label, Icon }) => (
-                <li key={label}>
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer me"
-                    className="inline-flex min-h-12 items-center gap-2 rounded-full border-2 border-line bg-surface px-6 py-3 font-bold transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
-                  >
-                    <Icon size={18} aria-hidden /> {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {/* Espaço aberto para o rosto aparecer na foto de fundo */}
+            <div className="h-32 sm:h-40 md:h-44" aria-hidden />
 
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-5">
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              {social.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer me"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border-2 border-line bg-surface px-5 py-2 font-bold transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+                >
+                  <Icon size={18} aria-hidden /> {label}
+                </a>
+              ))}
               <Link
                 id="hero-projects"
                 href="#projects"
-                className="inline-flex min-h-12 items-center gap-2 rounded-full bg-accent px-6 py-3 font-bold text-accent-fg shadow-lg shadow-accent/25 transition hover:-translate-y-0.5"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full bg-accent px-5 py-2 font-bold text-accent-fg shadow-lg shadow-accent/25 transition hover:-translate-y-0.5"
               >
                 {t.nav.projects} <ArrowRight size={18} aria-hidden />
               </Link>
               <Link
                 href={paths.wiki(lang)}
-                className="inline-flex items-center gap-2 font-bold text-accent"
+                className="inline-flex items-center gap-2 px-2 font-bold text-accent"
               >
                 <BookOpen size={18} aria-hidden /> {t.nav.wiki}
               </Link>
             </div>
           </div>
-
-          <div className="mx-auto max-w-4xl px-4 pb-16">
+          <div className="relative mx-auto max-w-3xl px-4 pb-10">
             <a
               id="gamedev-banner"
               href={AUTHOR.gamedev}
               target="_blank"
               rel="noopener noreferrer"
-              className="card-hover flex flex-col items-start gap-4 rounded-3xl border border-line bg-surface p-6 sm:flex-row sm:items-center"
+              className="card-hover flex flex-col items-start gap-3 rounded-2xl border border-line bg-surface px-4 py-3 sm:flex-row sm:items-center"
             >
-              <span className="grid size-14 shrink-0 place-items-center rounded-2xl bg-brand-purple text-white">
-                <Gamepad2 size={28} aria-hidden />
+              <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-brand-purple text-white">
+                <Gamepad2 size={18} aria-hidden />
               </span>
               <span className="flex-1">
-                <span className="font-display block text-lg">{copy.gamedevTitle}</span>
-                <span className="mt-1 block text-muted">{copy.gamedevText}</span>
+                <span className="font-display block text-sm">{copy.gamedevTitle}</span>
+                <span className="block text-sm text-muted">{copy.gamedevText}</span>
               </span>
-              <span className="inline-flex items-center gap-2 font-bold text-accent">
-                {copy.gamedevCta} <ExternalLink size={16} aria-hidden />
+              <span className="inline-flex items-center gap-2 text-sm font-bold text-accent">
+                {copy.gamedevCta} <ExternalLink size={14} aria-hidden />
               </span>
             </a>
           </div>
