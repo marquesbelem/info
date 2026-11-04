@@ -3,8 +3,8 @@
     "id": "1",
     "title": "Do SQLite Local para o Supabase",
     "category": "Vibe Coding",
-    "project": "Capivara Poupadora",
-    "content": "Enquanto fazia mais uma parte do meu projeto 'Capivara Poupadora', solicitei à IA que utilizasse um banco de dados e, de início, ela usou SQLite Local, o que a princípio parecia ser o suficiente, pois não teria custo nenhum e a velocidade para leitura seria deveras rápida. <br><br> Com isso, a IA utilizou o Prisma ORM que, pelo meu entendimento, é uma interface que auxilia na manipulação dos dados, facilitando a manipulação de SQL queries no banco de dados; isso me lembrou o Entity Framework do .NET. <br><br> Porém, futuramente quero expandir esse app para outras pessoas, então usar um banco de dados local não faz sentido. Pesquisei as opções e, por já estar usando o Prisma e Next.js, a opção mais indicada é o Supabase (PostgreSQL), que é uma plataforma open-source que fornece banco de dados PostgreSQL. <br><br> Nem sabia da existência, porém achei bem fácil de configurar: no próprio painel de gerenciamento do projeto já dá várias opções de configurações para escolher o que melhor atende ao projeto."
+    "project": "Loot Finance",
+    "content": "Enquanto fazia mais uma parte do meu projeto 'Loot Finance', solicitei à IA que utilizasse um banco de dados e, de início, ela usou SQLite Local, o que a princípio parecia ser o suficiente, pois não teria custo nenhum e a velocidade para leitura seria deveras rápida. <br><br> Com isso, a IA utilizou o Prisma ORM que, pelo meu entendimento, é uma interface que auxilia na manipulação dos dados, facilitando a manipulação de SQL queries no banco de dados; isso me lembrou o Entity Framework do .NET. <br><br> Porém, futuramente quero expandir esse app para outras pessoas, então usar um banco de dados local não faz sentido. Pesquisei as opções e, por já estar usando o Prisma e Next.js, a opção mais indicada é o Supabase (PostgreSQL), que é uma plataforma open-source que fornece banco de dados PostgreSQL. <br><br> Nem sabia da existência, porém achei bem fácil de configurar: no próprio painel de gerenciamento do projeto já dá várias opções de configurações para escolher o que melhor atende ao projeto."
   },
   {
     "id": "2",
@@ -75,5 +75,12 @@
     "category": "Jogos",
     "project": "Pingoal",
     "content": "Mas nem tudo foram flores. Tivemos sérios problemas com investidores que tinham acordado várias coisas para o stand na BGS e, na hora, quase nada foi fornecido. Tivemos que correr atrás de tudo na última hora, e o dono da ACE precisou arcar com custos do próprio bolso. Teve momentos em que o stand encheu tanto que os celulares de teste não deram conta, e tivemos que disponibilizar nossos aparelhos pessoais. <br><br> Mas a pior parte foi sofrer assédio. Nosso stand era um dos poucos que contava com mulheres no desenvolvimento e, ao mesmo tempo que isso chamou atenção pelo lado bom, também atraiu babacas. No fim, a presença de um público mais adulto que se conectou com a nostalgia do jogo e a alegria da galera jogando o multiplayer local fizeram a experiência ser sensacional."
+  },
+  {
+    "id": "12",
+    "title": "DX significa Developer Experience (em português, Experiência do Desenvolvedor)",
+    "category": "Vibe Coding",
+    "project": "Loot Finance",
+    "content": "Assim como UX (User Experience) mede a facilidade e satisfação de um utilizador final ao usar um sistema, a DX avalia o quão fácil, agradável e eficiente é para uma pessoa programadora trabalhar com uma determinada ferramenta, biblioteca ou ecossistema.<br><br> No contexto de frameworks como o Next.js, uma boa DX significa:<br><br> Feedback ferramental fluido: Recarregamento quase instantâneo do código no navegador (Fast Refresh / Hot Reloading).<br><br> Estrutura organizada: Roteamento intuitivo por pastas e ficheiros, sem necessidade de configurações manuais complexas.<br><br> Erros claros: Mensagens de erro objetivas no terminal e no navegador, facilitando a identificação rápida de problemas.<br><br> Menos burocracia técnica: Funcionalidades nativas prontas para uso (otimização de imagens, suporte a TypeScript, transições de rotas) que evitam a perda de tempo na configuração de ferramentas de build do zero."
   }
 ]

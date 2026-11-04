@@ -75,5 +75,12 @@
     "category": "Games",
     "project": "Pingoal",
     "content": "But it wasn't all roses. We had serious issues with investors who had agreed to several things for the BGS stand and, at the time, almost nothing was provided. We had to run after everything at the last minute, and the owner of ACE had to cover costs out of pocket. There were moments when the stand filled up so much that the test phones couldn't handle it, and we had to provide our personal devices. <br><br> But the worst part was suffering harassment. Our stand was one of the few with women in development, and while that drew good attention, it also attracted jerks. In the end, the presence of an older audience that connected with the game's nostalgia and the joy of people playing local multiplayer made the experience sensational."
+  },
+  {
+    "id": "12",
+    "title": "DX means Developer Experience",
+    "category": "Vibe Coding",
+    "project": "Loot Finance",
+    "content": "Just as UX (User Experience) measures how easy and satisfying a system is for an end user, DX evaluates how easy, pleasant, and efficient it is for a developer to work with a given tool, library, or ecosystem.<br><br> In the context of frameworks like Next.js, good DX means:<br><br> Smooth tooling feedback: Near-instant code reloading in the browser (Fast Refresh / Hot Reloading).<br><br> Organized structure: Intuitive routing by folders and files, with no need for complex manual configuration.<br><br> Clear errors: Objective error messages in the terminal and browser, making it quick to identify problems.<br><br> Less technical bureaucracy: Built-in features ready to use (image optimization, TypeScript support, route transitions) that save you from configuring build tools from scratch."
   }
 ]
