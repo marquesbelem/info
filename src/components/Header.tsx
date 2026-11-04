@@ -72,7 +72,7 @@ export function Header({ lang, t, current }: Props) {
 
       <nav
         aria-label={copy.openMenu}
-        className="flex justify-center gap-5 overflow-x-auto border-t border-line px-4 py-2 md:hidden"
+        className="flex gap-5 overflow-x-auto border-t border-line px-4 py-2 md:hidden [&>*:first-child]:ml-auto [&>*:last-child]:mr-auto [&>*]:shrink-0"
       >
         {links.map((l) => (
           <Link
