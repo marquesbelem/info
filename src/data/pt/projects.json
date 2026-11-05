@@ -12,6 +12,7 @@
     ],
     "link": "https://store.steampowered.com/app/633080/Relic_Hunters_Legend/",
     "image": "assets/projects/relic.jpg",
+    "videos": [],
     "category": "Multiplayer Online"
   },
   {
@@ -26,7 +27,8 @@
     ],
     "category": "Single Player",
     "link": "https://store.steampowered.com/app/3629580/Crislida/",
-    "image": "assets/projects/crisalida.jpg"
+    "image": "assets/projects/crisalida.jpg",
+    "videos": []
   },
   {
     "title": "Save the Bloogs",
@@ -41,7 +43,8 @@
     ],
     "category": "Mobile",
     "link": "https://board.fun/products/bloogs",
-    "image": "assets/projects/savethebloogs.png"
+    "image": "assets/projects/savethebloogs.png",
+    "videos": []
   },
   {
     "title": "Slash Quest & A Reporrivel Ilha",
@@ -54,7 +57,8 @@
     ],
     "category": "Single Player",
     "link": null,
-    "image": null
+    "image": null,
+    "videos": []
   },
   {
     "title": "Profane",
@@ -68,6 +72,7 @@
     ],
     "link": "https://www.profanemmo.com/?lang=pt",
     "image": "assets/projects/profane.jpg",
+    "videos": [],
     "category": "Multiplayer Online"
   },
   {
@@ -82,7 +87,8 @@
     ],
     "category": "Mobile",
     "link": "https://www.youtube.com/watch?v=g2oTBVoAPpc",
-    "image": "assets/projects/pingoal.png"
+    "image": "assets/projects/pingoal.png",
+    "videos": []
   },
   {
     "title": "Camera Punk Di-SK8",
@@ -96,7 +102,8 @@
     ],
     "category": "Single Player",
     "link": "https://www.youtube.com/watch?v=yGJNx6NopdE",
-    "image": "assets/projects/camera.png"
+    "image": "assets/projects/camera.png",
+    "videos": []
   },
   {
     "title": "PROACOINS",
@@ -111,7 +118,8 @@
     ],
     "category": "Mobile",
     "link": "https://www.instagram.com/proacoins/",
-    "image": "assets/projects/proacoins.png"
+    "image": "assets/projects/proacoins.png",
+    "videos": []
   },
   {
     "title": "Tika Books",
@@ -125,7 +133,8 @@
     ],
     "link": "https://www.instagram.com/tikabooksoficial/",
     "category": "Mobile",
-    "image": "assets/projects/tikabooks.png"
+    "image": "assets/projects/tikabooks.png",
+    "videos": []
   },
   {
     "title": "Sistemas Embarcados e Cassino",
@@ -139,7 +148,8 @@
     ],
     "category": "Embarcados",
     "link": null,
-    "image": null
+    "image": null,
+    "videos": []
   },
   {
     "title": "Sistema de Gestão Caritas",
@@ -152,7 +162,8 @@
     ],
     "category": "Sistemas",
     "link": null,
-    "image": null
+    "image": null,
+    "videos": []
   },
   {
     "title": "Filtro Instagram - Manual Produtora",
@@ -166,7 +177,8 @@
     ],
     "category": "Mobile",
     "link": "https://www.linkedin.com/posts/camila-marques-belem_ol%C3%A1-pessoal-uns-meses-atr%C3%A1s-o-bruno-nunes-activity-7241431276048568320-b_eI?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
-    "image": "./assets/projects/manual-produtora.png"
+    "image": "./assets/projects/manual-produtora.png",
+    "videos": []
   },
   {
     "title": "Roleta Interativa - Sakura Turismo",
@@ -178,6 +190,61 @@
     "link": "https://www.linkedin.com/posts/camila-marques-belem_recentemente-criei-um-pequeno-projeto-de-activity-7193810381490765825-37G6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
     "category": "Mobile",
     "description": "Desenvolvimento sob medida de um software de roleta interativa para ativação de marca em evento promocional. <br><br>' Implementação completa na Unity de mecânicas de sorteio, efeitos visuais, sonorização e arquitetura de exibição para múltiplos monitores (tela de público e painel de configuração do operador).",
-    "image": "assets/projects/roleta.png"
+    "image": "assets/projects/roleta.png",
+    "videos": []
+  },
+  {
+    "title": "Looot Finance",
+    "tags": [
+      "Next.js (App Router)",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Recharts",
+      "JWT",
+      "Vibe coding"
+    ],
+    "link": "",
+    "category": "Sistemas",
+    "description": "Aplicação web full-stack de controle financeiro pessoal que combina rigor analítico e elementos de gamificação para engajar o usuário na disciplina orçamentária. <br><br> Conta com gestão de despesas fixas/recorrentes, parcelamentos, receitas extras, orçamentos por categoria, relatórios analíticos interativos e módulos complementares como gestão de despesas pet e obras/reformas.",
+    "image": "assets/projects/lootfinance.png",
+    "videos": [
+      {
+        "src": "assets/videos/lootfinance/01.mp4",
+        "description": "Onboarding interativo do LootFinance com passo a passo guiado para configuração inicial de orçamento pessoal e controle financeiro inteligente."
+      },
+      {
+        "src": "assets/videos/lootfinance/02.mp4",
+        "description": "Definição e alocação de limites por categoria calculados com base no salário líquido, garantindo teto de gastos e planejamento financeiro mensal."
+      },
+      {
+        "src": "assets/videos/lootfinance/03.mp4",
+        "description": "Cadastro ágil de despesas diárias com categorização inteligente, data de vencimento e status de pagamento em interface otimizada para mobile."
+      },
+      {
+        "src": "assets/videos/lootfinance/04.mp4",
+        "description": "Lançamento e acompanhamento de contas de consumo essenciais com controle de pendências e lembretes de vencimento."
+      },
+      {
+        "src": "assets/videos/lootfinance/05.mp4",
+        "description": "Dashboard financeiro gamificado em tempo real com métricas no estilo RPG, como HP do orçamento, defesa de contas pagas e monitoramento de gastos."
+      },
+      {
+        "src": "assets/videos/lootfinance/06.mp4",
+        "description": "Visão analítica anual com gráficos comparativos de receitas, despesas, superávit e evolução histórica do saldo mês a mês."
+      },
+      {
+        "src": "assets/videos/lootfinance/07.mp4",
+        "description": "Gestão completa de despesas com filtros por categoria, status de pagamento, parcelamentos e visualização de gastos fixos recorrentes."
+      },
+      {
+        "src": "assets/videos/lootfinance/08.mp4",
+        "description": "Módulo dedicado para pets com perfil individual, controle de peso, histórico veterinário e calendário de vacinas e vermifugação."
+      },
+      {
+        "src": "assets/videos/lootfinance/09.mp4",
+        "description": "Módulo dedicado para obras e reformas com gestão de despesas, controle de orçamento e acompanhamento de gastos"
+      }
+    ]
   }
 ]

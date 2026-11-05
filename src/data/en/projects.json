@@ -12,6 +12,7 @@
     ],
     "link": "https://store.steampowered.com/app/633080/Relic_Hunters_Legend/",
     "image": "assets/projects/relic.jpg",
+    "videos": [],
     "category": "Multiplayer Online"
   },
   {
@@ -26,7 +27,8 @@
     ],
     "category": "Single Player",
     "link": "https://store.steampowered.com/app/3629580/Crislida/",
-    "image": "assets/projects/crisalida.jpg"
+    "image": "assets/projects/crisalida.jpg",
+    "videos": []
   },
   {
     "title": "Save the Bloogs",
@@ -41,7 +43,8 @@
     ],
     "category": "Mobile",
     "link": "https://board.fun/products/bloogs",
-    "image": "assets/projects/savethebloogs.png"
+    "image": "assets/projects/savethebloogs.png",
+    "videos": []
   },
   {
     "title": "Slash Quest & The Dreadful Island",
@@ -54,7 +57,8 @@
     ],
     "category": "Single Player",
     "link": null,
-    "image": null
+    "image": null,
+    "videos": []
   },
   {
     "title": "Profane",
@@ -68,6 +72,7 @@
     ],
     "link": "https://www.profanemmo.com/?lang=pt",
     "image": "assets/projects/profane.jpg",
+    "videos": [],
     "category": "Multiplayer Online"
   },
   {
@@ -82,7 +87,8 @@
     ],
     "category": "Mobile",
     "link": "https://www.youtube.com/watch?v=g2oTBVoAPpc",
-    "image": "assets/projects/pingoal.png"
+    "image": "assets/projects/pingoal.png",
+    "videos": []
   },
   {
     "title": "Camera Punk Di-SK8",
@@ -96,7 +102,8 @@
     ],
     "category": "Single Player",
     "link": "https://www.youtube.com/watch?v=yGJNx6NopdE",
-    "image": "assets/projects/camera.png"
+    "image": "assets/projects/camera.png",
+    "videos": []
   },
   {
     "title": "PROACOINS",
@@ -111,7 +118,8 @@
     ],
     "category": "Mobile",
     "link": "https://www.instagram.com/proacoins/",
-    "image": "assets/projects/proacoins.png"
+    "image": "assets/projects/proacoins.png",
+    "videos": []
   },
   {
     "title": "Tika Books",
@@ -125,7 +133,8 @@
     ],
     "link": "https://www.instagram.com/tikabooksoficial/",
     "category": "Mobile",
-    "image": "assets/projects/tikabooks.png"
+    "image": "assets/projects/tikabooks.png",
+    "videos": []
   },
   {
     "title": "Embedded Systems & Casino",
@@ -139,7 +148,8 @@
     ],
     "category": "Embedded",
     "link": null,
-    "image": null
+    "image": null,
+    "videos": []
   },
   {
     "title": "Caritas Management System",
@@ -152,7 +162,8 @@
     ],
     "category": "Systems",
     "link": null,
-    "image": null
+    "image": null,
+    "videos": []
   },
   {
     "title": "Instagram Filter - Manual Produtora",
@@ -166,7 +177,8 @@
     ],
     "category": "Mobile",
     "link": "https://www.linkedin.com/posts/camila-marques-belem_ol%C3%A1-pessoal-uns-meses-atr%C3%A1s-o-bruno-nunes-activity-7241431276048568320-b_eI?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
-    "image": "./assets/projects/manual-produtora.png"
+    "image": "./assets/projects/manual-produtora.png",
+    "videos": []
   },
   {
     "title": "Interactive Roulette - Sakura Tourism",
@@ -178,6 +190,61 @@
     "link": "https://www.linkedin.com/posts/camila-marques-belem_recentemente-criei-um-pequeno-projeto-de-activity-7193810381490765825-37G6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABnCsQMBvsU9iO1qJMP32wD2PFjbIKWJGZc",
     "category": "Mobile",
     "description": "Custom development of interactive roulette software for brand activation in promotional events. <br><br> Complete implementation in Unity of raffle mechanics, visual effects, sound design, and display architecture for multiple monitors (audience screen and operator configuration panel).",
-    "image": "assets/projects/roleta.png"
+    "image": "assets/projects/roleta.png",
+    "videos": []
+  },
+  {
+    "title": "Looot Finance",
+    "tags": [
+      "Next.js (App Router)",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Recharts",
+      "JWT",
+      "Vibe coding"
+    ],
+    "link": "",
+    "category": "Systems",
+    "description": "Full-stack personal financial management web application that combines analytical rigor and gamification elements to engage users in budget discipline. <br><br> Features fixed/recurring expense management, installments, extra income, category budgets, interactive analytical reports, and complementary modules such as pet expense tracking and home renovation management.",
+    "image": "assets/projects/lootfinance.png",
+    "videos": [
+      {
+        "src": "assets/videos/lootfinance/01.mp4",
+        "description": "Interactive LootFinance onboarding with guided step-by-step setup for initial budget configuration and smart financial tracking."
+      },
+      {
+        "src": "assets/videos/lootfinance/02.mp4",
+        "description": "Category spending limits and percentage-based salary allocation for strict budget control and monthly financial planning."
+      },
+      {
+        "src": "assets/videos/lootfinance/03.mp4",
+        "description": "Quick daily expense entry with category tagging, payment status tracking, and mobile-first responsive design."
+      },
+      {
+        "src": "assets/videos/lootfinance/04.mp4",
+        "description": "Essential utility bill tracking and management with due dates and pending payment alerts."
+      },
+      {
+        "src": "assets/videos/lootfinance/05.mp4",
+        "description": "Gamified RPG-style financial dashboard displaying budget HP, payment defense status, and live expense metrics."
+      },
+      {
+        "src": "assets/videos/lootfinance/06.mp4",
+        "description": "Annual analytics view with month-by-month comparative charts covering income, expenses, and net surplus trends."
+      },
+      {
+        "src": "assets/videos/lootfinance/07.mp4",
+        "description": "Comprehensive expense management with advanced filters by category, payment status, and recurring fixed expenses."
+      },
+      {
+        "src": "assets/videos/lootfinance/08.mp4",
+        "description": "Dedicated pet care module with individual profiles, weight tracking, veterinary history, and vaccination schedules."
+      },
+      {
+        "src": "assets/videos/lootfinance/09.mp4",
+        "description": "Home renovation module with expense management, budget control, and spending tracking"
+      }
+    ]
   }
 ]

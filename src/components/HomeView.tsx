@@ -178,6 +178,8 @@ export function HomeView({ lang }: { lang: Lang }) {
             allLabel={copy.all}
             emptyLabel={t.projects.empty}
             moreInfo={t.projects.more_info}
+            watchVideo={t.projects.watch_video}
+            close={t.modal.close}
           />
         </section>
 

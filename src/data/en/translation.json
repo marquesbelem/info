@@ -14,7 +14,8 @@
   "projects": {
     "title": "Projects",
     "empty": "No projects found.",
-    "more_info": "More information"
+    "more_info": "More information",
+    "watch_video": "Watch video"
   },
   "skills": {
     "title": "Skills",

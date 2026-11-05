@@ -13,12 +13,23 @@ import enWiki from "@/data/en/wiki.json";
 import ptT from "@/data/pt/translation.json";
 import enT from "@/data/en/translation.json";
 
+export type ProjectVideo =
+  | string
+  | {
+      src?: string;
+      video?: string;
+      url?: string;
+      description?: string;
+    };
+
 export type Project = {
   title: string;
   description: string;
   tags: string[];
-  link?: string;
-  image?: string;
+  link?: string | null;
+  image?: string | null;
+  videos?: ProjectVideo[] | null;
+  video?: ProjectVideo[] | null;
   category: string;
 };
 export type EventItem = {
@@ -49,10 +60,18 @@ export type WikiPost = {
 export type Translation = typeof ptT;
 
 /** Normaliza "./assets/x" e "assets/x" para "/assets/x" (pasta public). */
-export const img = (src?: string) =>
+export const img = (src?: string | null) =>
   src ? "/" + src.replace(/^\.?\//, "") : undefined;
 
-const byImageFirst = <T extends { image?: string }>(list: T[]) =>
+/** Normaliza caminhos de vídeo para "/assets/videos/..." ou "/assets/...". */
+export const videoUrl = (src: string) => {
+  const clean = src.trim().replace(/^\.?\//, "");
+  if (/^https?:\/\//i.test(clean)) return clean;
+  if (clean.startsWith("assets/")) return "/" + clean;
+  return "/assets/videos/" + clean.replace(/^videos\//, "");
+};
+
+const byImageFirst = <T extends { image?: string | null }>(list: T[]) =>
   [...list].sort((a, b) => (b.image ? 1 : 0) - (a.image ? 1 : 0));
 
 export function getData(lang: Lang) {
