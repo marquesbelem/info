@@ -21,6 +21,14 @@ type NormalizedVideo = {
   description?: string;
 };
 
+const toSlug = (text: string) =>
+  text
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
 const getVideos = (p: Project): NormalizedVideo[] =>
   (p.videos ?? p.video ?? [])
     .map((item) => {
@@ -51,11 +59,62 @@ export function ProjectsGrid({
   const [videoIdx, setVideoIdx] = useState(0);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const initializedFromUrl = useRef(false);
 
   const list = cat === allLabel ? projects : projects.filter((p) => p.category === cat);
   const activeVideos = active ? getVideos(active) : [];
   const currentItem = activeVideos[videoIdx];
   const currentVideo = currentItem ? videoUrl(currentItem.src) : undefined;
+
+  useEffect(() => {
+    const syncFromUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      const rawProject = params.get("project") ?? params.get("projeto");
+      if (!rawProject) {
+        setActive(null);
+        return;
+      }
+      const slug = toSlug(rawProject);
+      const found = projects.find((p) => {
+        const vids = getVideos(p);
+        if (vids.length === 0) return false;
+        return toSlug(p.title) === slug;
+      });
+      if (!found) return;
+      const vids = getVideos(found);
+      const rawVideo = Number(params.get("video") ?? "1");
+      const idx =
+        Number.isFinite(rawVideo) && rawVideo >= 1
+          ? Math.min(Math.floor(rawVideo) - 1, vids.length - 1)
+          : 0;
+      setVideoIdx(idx);
+      setActive(found);
+    };
+
+    syncFromUrl();
+    initializedFromUrl.current = true;
+    window.addEventListener("popstate", syncFromUrl);
+    return () => window.removeEventListener("popstate", syncFromUrl);
+  }, [projects]);
+
+  useEffect(() => {
+    if (!initializedFromUrl.current) return;
+    const url = new URL(window.location.href);
+    url.searchParams.delete("projeto");
+    if (active) {
+      url.searchParams.set("project", toSlug(active.title));
+      url.searchParams.set("video", String(videoIdx + 1));
+      if (!url.hash) url.hash = "projects";
+    } else {
+      url.searchParams.delete("project");
+      url.searchParams.delete("video");
+    }
+    const nextUrl = url.pathname + url.search + url.hash;
+    const currentUrl = window.location.pathname + window.location.search + window.location.hash;
+    if (nextUrl !== currentUrl) {
+      window.history.replaceState(null, "", nextUrl);
+    }
+  }, [active, videoIdx]);
 
   useEffect(() => {
     const d = dialogRef.current;
